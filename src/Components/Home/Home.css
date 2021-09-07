@@ -4,23 +4,26 @@
 }
 
 .main {
-    /* background-color:#f8ecf8 ; */
     margin: 10px;
   }
   .column-left {
-    /* display: flex; */
-    padding-top: 10px;
-    /* flex-direction: column; */
-    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
   }
   
   .column-right{
-    /* display: flex; */
-    /* justify-content: space-around; */
-    /* padding-top: 35px; */
-    border: 1px solid #000;
     height:50%;
     width:80%;
-    padding: 20px;
-    /* margin: 20px; */
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
   }
+
+  .MuiChip-colorPrimary {
+    color: #fff !important;
+    background-color: #6708ff !important;
+    margin: inherit !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}

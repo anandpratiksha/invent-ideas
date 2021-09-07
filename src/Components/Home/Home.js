@@ -18,11 +18,33 @@ function Home() {
                         clickable
                         color="primary"
                         avatar={<Avatar>S</Avatar>}
+                    /><br />
+                    <Chip
+                        size="medium"
+                        label="software"
+                        clickable
+                        color="primary"
+                        avatar={<Avatar>S</Avatar>}
+                    /><br />
+                    <Chip
+                        size="medium"
+                        label="software"
+                        clickable
+                        color="primary"
+                        avatar={<Avatar>S</Avatar>}
+                    /><br />
+                    <Chip
+                        size="medium"
+                        label="software"
+                        clickable
+                        color="primary"
+                        avatar={<Avatar>S</Avatar>}
                     />
                     <br />
                 </div>
                 <div className="column-right">
                     <InnovatorsPage />
+
                 </div>
             </div>
             <Animation />

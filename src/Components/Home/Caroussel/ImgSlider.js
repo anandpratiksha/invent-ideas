@@ -6,7 +6,6 @@ import image1 from '../../img/slideA.png'
 import image2 from '../../img/slideA.png'
 import image3 from '../../img/slideA.png'
 import image4 from '../../img/slideA.png'
-import image5 from '../../img/slideA.png'
 
 
 export default function App() {

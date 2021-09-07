@@ -1,0 +1,15 @@
+.MuiButton-contained{
+    background-color: #7d2ae8 !important; 
+    font-size: 1.2rem !important; 
+    margin: 10 auto !important; 
+   transition: 0.7s !important;
+   margin-right: 30px !important;
+}
+
+.MuiButton-contained:hover{
+    color:#fff;
+    background-color:#7d2ae8;
+    /* font-size: 1.6rem; */
+    box-shadow:  5px 5px 10px #868686,
+             -5px -5px 10px #ffffff !important;
+}

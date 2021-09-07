@@ -1,0 +1,10 @@
+.sliderimg{
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  justify-content:center;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+

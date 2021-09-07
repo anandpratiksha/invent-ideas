@@ -1,0 +1,200 @@
+.new_footer_area {
+    background: #ececff;
+}
+
+.new_footer_top {
+    padding: 10px 0px 260px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+/* .new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+} */
+
+footer {
+    margin-top: 20px;
+}
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("http://droitthemes.com/html/saasland/img/seo/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+    object-fit: cover;
+}
+/* car */
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+/* cycle */
+.new_footer_top .footer_bg .footer_bg_two {
+    background:url('../gifs/ezgif.com-gif-maker\ \(2\).gif') no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+/* banker-man */
+.new_footer_top .footer_bg .footer_bg_two1 {
+    background: url('../gifs/Unhappy-Office-Lady-unscreen.gif') no-repeat center center;
+    width: 178px;
+    height: 120px;
+  background-size:100%;
+    bottom: 0;
+    left: 18%;
+    position: absolute;
+    -webkit-animation: myfirst 50s linear infinite;
+    animation: myfirst 50s linear infinite;
+}
+/* employee */
+.new_footer_top .footer_bg .footer_bg_two2 {
+    background: url('../gifs/afe109ce9017a6c3c844be0ef3e5ee-unscreen.gif') no-repeat center center;
+    width: 158px;
+    height: 110px;
+  background-size:100%;
+    bottom: 0;
+    left: 18%;
+    position: absolute;
+    -webkit-animation: myfirst 70s linear infinite;
+    animation: myfirst 70s linear infinite;
+}
+.new_footer_top .footer_bg .footer_bg_two3{
+    background: url('../gifs/1iyd-unscreen.gif') no-repeat center center;
+    width: 170px;
+    height: 120px;
+  background-size:100%;
+    bottom: 0;
+    position: absolute;
+    -webkit-animation: myfirst1 70s linear infinite;
+    animation: myfirst1 70s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two4{
+  background: url('../gifs/oie_2610303YMzJH2zO.gif') no-repeat center center;
+  width: 158px;
+  height: 120px;
+background-size:100%;
+  bottom: 0;
+  left: 18%;
+  position: absolute;
+  -webkit-animation: myfirst 40s linear infinite;
+  animation: myfirst 40s linear infinite;
+}
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+    footer {
+        margin-top: -90px;
+    }
+}
+/*************footer End*****************/
+
+@-moz-keyframes myfirst1 {
+    0% {
+      right: -5%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  
+  @-webkit-keyframes myfirst1 {
+    0% {
+        right: -5%;
+    }
+    100% {
+        right: 100%;
+    }
+  }
+  
+  @keyframes myfirst1 {
+    0% {
+        right: -5%;
+    }
+    100% {
+        right: 100%;
+    }
+  }
+  

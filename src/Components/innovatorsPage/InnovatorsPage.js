@@ -1,6 +1,7 @@
 import React from 'react'
 import './InnovatorsPage.css'
 import ImgSlider from '../Home/Caroussel/ImgSlider'
+import innovatorItem from '../innovatorsPage/data'
 
 function InnovatorsPage({ innovatorItems }) {
     return (
@@ -11,7 +12,7 @@ function InnovatorsPage({ innovatorItems }) {
                         return (
                             <div className="hovering" key={items.id}>
                                 <h2 className="idea-header">Title:{items.name}</h2>
-                                <ImgSlider />
+                                <ImgSlider innovatorItem={innovatorItem} />
                                 <h4 className="idea-description">Summary: {items.description}</h4>
                                 <div className="idea-intrested">
                                     <button className="intrested">Intrested</button>

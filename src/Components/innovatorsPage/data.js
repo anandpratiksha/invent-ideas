@@ -3,11 +3,13 @@ const data = [
         id: 1,
         name: 'software',
         description: 'cxhgjdkssssdcx dcshxzksaix dgckzznaz',
+        image: '../../img/slideA.png',
     },
     {
         id: 2,
         name: 'abc',
         description: 'cxhgjdkssssdcx dcshxzksaix dgckzznaz',
+        image: '../../img/slideA.png',
     },
     {
         id: 3,
@@ -24,11 +26,7 @@ const data = [
         name: 'abc',
         description: 'cxhgjdkssssdcx dcshxzksaix dgckzznaz',
     },
-    {
-        id: 6,
-        name: 'abc',
-        description: 'cxhgjdkssssdcx dcshxzksaix dgckzznaz',
-    }
+
 ]
 
 export default data;

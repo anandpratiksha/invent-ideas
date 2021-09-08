@@ -45,7 +45,6 @@ function Home() {
                 </div>
                 <div className="column-right">
                     <InnovatorsPage innovatorItems={innovatorItems} />
-
                 </div>
             </div>
             <Animation />

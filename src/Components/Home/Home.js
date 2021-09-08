@@ -22,24 +22,24 @@ function Home() {
                     /><br />
                     <Chip
                         size="medium"
-                        label="software"
+                        label="Mechanincal"
                         clickable
                         color="primary"
-                        avatar={<Avatar>S</Avatar>}
+                        avatar={<Avatar>M</Avatar>}
                     /><br />
                     <Chip
                         size="medium"
-                        label="software"
+                        label="Deveops"
                         clickable
                         color="primary"
-                        avatar={<Avatar>S</Avatar>}
+                        avatar={<Avatar>D</Avatar>}
                     /><br />
                     <Chip
                         size="medium"
-                        label="software"
+                        label="Others"
                         clickable
                         color="primary"
-                        avatar={<Avatar>S</Avatar>}
+                        avatar={<Avatar>O</Avatar>}
                     />
                     <br />
                 </div>

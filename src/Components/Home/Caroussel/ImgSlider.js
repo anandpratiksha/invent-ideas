@@ -7,7 +7,6 @@ import image2 from '../../img/slideA.png'
 import image3 from '../../img/slideA.png'
 import image4 from '../../img/slideA.png'
 
-
 export default function App() {
   return (
     <div className="carousel">
@@ -20,6 +19,4 @@ export default function App() {
     </div>
   );
 }
-
-
 

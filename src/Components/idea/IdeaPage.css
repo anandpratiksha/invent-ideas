@@ -1,0 +1,13 @@
+.idea{
+    margin: 50px;
+}
+
+.idea-contents{
+    display: flex;
+   
+}
+
+.contact{
+    display: flex;
+    justify-content: flex-end;
+}

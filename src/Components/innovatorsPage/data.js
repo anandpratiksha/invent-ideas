@@ -1,10 +1,7 @@
-// Name of idea
-// description
-
 const data = [
     {
         id: 1,
-        name: 'abc',
+        name: 'software',
         description: 'cxhgjdkssssdcx dcshxzksaix dgckzznaz',
     },
     {

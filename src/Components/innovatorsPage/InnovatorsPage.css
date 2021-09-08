@@ -1,0 +1,18 @@
+.columns{
+    margin: 20px;
+    display: flex;
+}
+   
+.column-left {
+    padding: 10px;
+    margin: 10px;
+  }
+
+.column-right{
+    height:50%;
+    width:80%;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+  }

@@ -5,6 +5,7 @@ import { Avatar } from '@material-ui/core';
 import './Home.css'
 import Animation from '../animation/Animation';
 import InnovatorsPage from '../innovatorsPage/InnovatorsPage';
+import innovatorItems from '../innovatorsPage/data'
 
 function Home() {
     return (
@@ -43,7 +44,7 @@ function Home() {
                     <br />
                 </div>
                 <div className="column-right">
-                    <InnovatorsPage />
+                    <InnovatorsPage innovatorItems={innovatorItems} />
 
                 </div>
             </div>

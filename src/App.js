@@ -5,8 +5,8 @@ import Ideapage from './Components/idea/Ideapage'
 function App() {
   return (
     <div className="App">
-      <Investor />
-      {/* <Ideapage /> */}
+      {/* <Investor /> */}
+      <Ideapage />
     </div>
   );
 }

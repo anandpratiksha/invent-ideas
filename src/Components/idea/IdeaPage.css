@@ -1,5 +1,5 @@
 .idea{
-    margin: 50px;
+    margin: 0 80px;
 }
 
 .idea-contents{
@@ -10,4 +10,12 @@
 .contact{
     display: flex;
     justify-content: flex-end;
+}
+
+.idea-title{
+    margin-left: 136px;
+}
+
+.name, .date{
+    display: grid;
 }

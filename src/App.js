@@ -1,11 +1,11 @@
 import './App.css';
-import Home from './Components/Home/Home';
+import Investor from './Components/Home/InvestorPage';
 import Ideapage from './Components/idea/Ideapage'
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Investor />
       {/* <Ideapage /> */}
     </div>
   );

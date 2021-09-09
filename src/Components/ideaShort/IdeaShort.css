@@ -43,14 +43,17 @@
 
 .idea-header{
     display: flex;
+    color:#130613;
 }
 
 .idea-description{
     display: flex;
+    text-align: left;
 }
 
 .idea-intrested{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 30px;
 }
+
+

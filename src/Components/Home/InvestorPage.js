@@ -4,8 +4,8 @@ import Chip from '@material-ui/core/Chip';
 import { Avatar } from '@material-ui/core';
 import './Home.css'
 import Animation from '../animation/Animation';
-import InnovatorsPage from '../innovatorsPage/InnovatorsPage';
-import innovatorItems from '../innovatorsPage/data'
+import InvestorsPage from '../ideaShort/IdeaShort';
+import innovatorItems from '../ideaShort/data'
 
 function Home() {
     return (
@@ -44,7 +44,7 @@ function Home() {
                     <br />
                 </div>
                 <div className="column-right">
-                    <InnovatorsPage innovatorItems={innovatorItems} />
+                    <InvestorsPage innovatorItems={innovatorItems} />
                 </div>
             </div>
             <Animation />

@@ -1,7 +1,7 @@
 import React from 'react'
 import './IdeaPage.css'
 import Nav from '../Navbar/Navbar'
-import ImgSlider from '../../Components/Home/Caroussel/ImgSlider'
+// import ImgSlider from '../../Components/Home/Caroussel/ImgSlider'
 
 function Ideapage() {
     return (
@@ -14,7 +14,7 @@ function Ideapage() {
                     <h2>Name</h2>
                     <h3>Date</h3>
                 </div>
-                <ImgSlider />
+                {/* <ImgSlider /> */}
                 <h1>Description:egwrsdx dcsxzbj dcsbx  gdsxbz</h1>
                 <div className="contact">
                     <button>Contact</button>

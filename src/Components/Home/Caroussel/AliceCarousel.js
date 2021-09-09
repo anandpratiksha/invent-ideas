@@ -1,11 +1,7 @@
 import React from "react";
-import "./Carousel.css";
+import "./AliceCarousel.css";
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-import image1 from '../../img/slideA.png'
-import image2 from '../../img/slideA.png'
-import image3 from '../../img/slideA.png'
-import image4 from '../../img/slideA.png'
 
 export default function App({ innovatorItem }) {
   return (
@@ -17,8 +13,10 @@ export default function App({ innovatorItem }) {
         <img src={image4} className="sliderimg" alt="" /> */}
         {
           innovatorItem.map((item) => {
+            {/* console.log(item) */ }
+            console.log(item.image)
             return (
-              <img src={item.image} className="sliderimg" alt="pic" />
+              <img src={item.image} className="slidering" alt="pic" />
             )
           })
         }

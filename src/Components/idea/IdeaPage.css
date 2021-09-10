@@ -13,9 +13,9 @@
 }
 
 .idea-title{
-    margin-left: 136px;
+    margin-left: 160px;
 }
 
 .name, .date{
-    display: grid;
+    padding: 20px;
 }

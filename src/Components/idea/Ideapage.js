@@ -13,12 +13,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function Ideapage() {
+function Ideapage({ ideaItems }) {
     const classes = useStyles();
     return (
         <div>
             <Nav />
-            <div className="idea">
+            {/* <div className="idea">
                 <h1 className="idea-title">Innovate</h1>
                 <div className="idea-contents">
                     <Avatar alt="avatar" src={avatar} className={classes.large} />
@@ -30,7 +30,27 @@ function Ideapage() {
                 <div className="contact">
                     <button>Contact</button>
                 </div>
-            </div>
+            </div> */}
+
+            {
+                ideaItems.map((items) => {
+                    return (
+                        <div className="idea" key={items.id}>
+                            <h1 className="idea-title">{items.name}</h1>
+                            <div className="idea-contents">
+                                <Avatar alt="avatar" src={items.image} className={classes.large} />
+                                <h2 className="name">Name:{items.names}</h2>
+                                <h2 className="date">Date:9/9/21</h2>
+                            </div>
+                            <ImgSlider />
+                            <p>{items.description}</p>
+                            <div className="contact">
+                                <button>Contact</button>
+                            </div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

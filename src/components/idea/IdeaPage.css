@@ -1,0 +1,48 @@
+.idea{
+    margin: 0 80px;
+    border: 3px solid rgb(182, 175, 175);
+    border-radius:1.5rem;
+    padding:1rem;
+    margin-bottom: 3rem;
+}
+
+.idea-contents{
+    display: flex;
+   
+}
+
+.contact{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.idea-title{
+    margin-left: 15%;
+}
+
+.name, .date{
+    padding: 20px;
+}
+
+.MuiAvatar-root{
+    height:5rem !important;
+    width:5rem !important;
+} 
+
+.navigation_button {
+    background-color: #7d2ae8 !important;
+    font-size: 1.2rem !important;
+    margin: 10 auto !important;
+    transition: 0.7s !important;
+    margin-right: 30px !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+  }
+  
+  .navigation_button:hover {
+    background-color: #6320bb !important;
+    /* font-size: 1.6rem; */
+    box-shadow: 5px 5px 10px #868686, -5px -5px 10px #ffffff !important;
+  }
+  
+

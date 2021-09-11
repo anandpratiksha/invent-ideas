@@ -1,0 +1,66 @@
+.main {
+  /* background-color:#f8ecf8 ; */
+  margin: 10px;
+}
+.leftside {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+.rightside {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 35px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.description {
+  font-size: 4rem;
+}
+
+.MuiButton-contained {
+  background-color: #7d2ae8 !important;
+  font-size: 1.2rem !important;
+  margin: 0 auto !important;
+  margin-top: 50px !important;
+  transition: 0.7s !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.MuiButton-contained:hover {
+  color: #fff;
+  background-color: #7d2ae8;
+  /* font-size: 1.6rem; */
+  box-shadow: 5px 5px 10px #868686, -5px -5px 10px #ffffff !important;
+}
+
+img {
+  height: 29rem;
+}
+
+.left {
+  display: flex;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.colorChange {
+  background-color: #f8ecf8;
+  box-shadow: 0 0px 2px rgba(0, 0, 0.1);
+}
+
+.imgslider {
+  margin-top: 50px;
+}
+
+.heading {
+  font-size: 3rem;
+}

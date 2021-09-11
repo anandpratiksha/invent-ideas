@@ -1,0 +1,12 @@
+.MuiFormControlLabel-root {
+  padding: 10px;
+}
+
+.MuiTypography-body1 {
+  font-size: 1.3rem !important;
+}
+
+.radioButton {
+  width: 40%;
+  left: 166%;
+}

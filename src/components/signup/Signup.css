@@ -1,0 +1,66 @@
+.formContainer {
+  width: 100%;
+}
+
+.formBlock {
+  position: absolute;
+  left: 23%;
+  right: 23%;
+  top: 10%;
+  padding: 2% 3%;
+  background-color: #f8b6f8;
+  border-radius: 15px;
+  /* border: 3px solid #000; */
+}
+
+.MuiFormLabel-root {
+  color: black !important;
+}
+
+.Mui-focused {
+  color: #7d2ae8 !important;
+}
+
+.MuiInputBase-root {
+  background-color: #fff;
+}
+
+.profileAvatar {
+  border: 5px solid #7d2ae8;
+  position: absolute;
+  left: 38%;
+  margin-bottom: 5%;
+}
+
+.rowedInput {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.MuiAvatar-root {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.MuiButton-contained {
+  background-color: #7d2ae8 !important;
+  font-size: 1.2rem !important;
+  margin: 20px !important;
+  width: 30%;
+  position: absolute;
+  /* left: 4%; */
+}
+
+.alreadyHave {
+  position: absolute;
+  left: 38%;
+  margin-top: 7px;
+}
+
+.formTitle {
+  position: absolute;
+  left: 10%;
+  font-size: 1.5rem;
+}

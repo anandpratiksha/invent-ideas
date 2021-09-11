@@ -1,0 +1,54 @@
+.profileContainer {
+  /* border: 3px solid #000; */
+  width: 80%;
+  margin: 0 10%;
+}
+
+.profilePic {
+  position: absolute;
+  margin: 7% auto auto -30%;
+  box-shadow: 1px 1px 10px rgb(125, 132, 230), 1px 1px 10px rgb(125, 149, 196);
+}
+
+.profileName {
+  position: absolute;
+  left: 38%;
+  top: 8%;
+  font-size: 3rem;
+}
+
+.profileCountList {
+  position: absolute;
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  left: 37%;
+  top: 18%;
+  font-size: 1.5rem;
+}
+
+.countCounter {
+  margin-right: 40px;
+  border: 3px solid #818181;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 6px rgb(158, 162, 224), 1px 1px 6px rgb(158, 162, 224);
+  background-color: #f8ecf8;
+}
+
+.ideaSection {
+  position: relative;
+  left: 9%;
+  top: 50px;
+  width: 75%;
+  padding: 10px;
+  border: 3px solid #818181;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  background-color: #f8ecf8;
+}
+
+.ideaSectionTitle {
+  font-size: 1.5rem;
+}

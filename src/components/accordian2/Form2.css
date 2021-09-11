@@ -1,0 +1,9 @@
+.fileInputLabel {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+}
+
+.imageFormButton {
+  left: 85%;
+  margin-top: -5px !important;
+}

@@ -1,0 +1,28 @@
+.loadingContainer {
+  position: relative;
+  width: 30%;
+  height: 500px;
+  margin: 7% auto;
+  border: 3px solid rgb(112, 110, 110);
+  border-radius: 15px;
+  background-color: #f0eaf0;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0.12), 1px 1px 5px rgba(0, 0, 0.24);
+}
+
+.loading__image {
+  position: absolute;
+  /* border: 3px solid #000; */
+  margin: 25% 30.5%;
+  width: 80%;
+}
+
+.spinner {
+  width: 50%;
+  height: 50%;
+}
+
+.spinner__text {
+  position: absolute;
+  margin-left: 17%;
+  color: #37a9df;
+}

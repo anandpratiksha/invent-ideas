@@ -1,0 +1,6 @@
+.accordianContainer {
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+  /* background-color: #c76fc7; */
+}

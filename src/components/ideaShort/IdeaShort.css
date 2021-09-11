@@ -1,0 +1,64 @@
+.columns{
+    margin: 20px;
+    display: flex;
+    
+}
+  
+.column-left {
+    padding: 10px;
+    margin: 10px;
+    position:fixed;
+  }
+
+.MuiChip-colorPrimary {
+    color: #fff !important;
+    background-color: #6708ff !important;
+    margin: inherit !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+}
+.MuiChip-root .MuiChip-avatar{
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.column-right{
+    height:50% ;
+    width:80%;
+    /* padding: 10px; */
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.hovering{
+  padding: 20px;
+  border: 3px solid gray;
+  border-radius:20px;
+  margin-bottom: 5px;
+  box-shadow: 0 1px 3px rgb(235, 224, 224), 0 1px 2px rgb(253, 251, 251); 
+}
+
+.hovering:hover{
+    box-shadow:  5px 5px 15px #5e5b5b,
+             -5px -5px 15px #ffffff;
+}
+
+.idea-header{
+    display: flex;
+    color:#130613;
+}
+
+.idea-description{
+    display: flex;
+    text-align: left;
+}
+
+.idea-intrested{
+    display: flex;
+    justify-content: flex-end;
+    position: inherit;
+}
+
+

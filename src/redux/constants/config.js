@@ -1,0 +1,1 @@
+export const deployLink = 'https://inventideas.herokuapp.com';

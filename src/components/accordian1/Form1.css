@@ -1,0 +1,51 @@
+.dropdownCategory {
+  display: none;
+}
+
+.dropdownHeading {
+  position: relative;
+  left: 1.5%;
+  width: 100%;
+  border: 1px solid rgb(167, 164, 164);
+  border-radius: 5px;
+  padding: 14px 0px 14px 10px;
+  background-color: #fff;
+}
+
+.categoryIcon {
+  position: absolute;
+  right: 7%;
+}
+
+.dropdownTitle {
+  width: 1145px;
+  margin: 15px 0;
+  /* border: 3px solid #000; */
+}
+
+.dropdownTitle:hover .dropdownCategory {
+  display: block;
+  margin-left: 20px;
+}
+
+.dropdownTitle:hover .dropdownHeading {
+  /* left: 3%; */
+  border: 1px solid rgb(32, 32, 32);
+}
+
+.dropdownList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.MuiListItem-root {
+  width: 50% !important;
+}
+
+.formButton {
+  position: absolute;
+  left: 80%;
+  padding: 1px !important;
+  width: 20%;
+}

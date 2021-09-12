@@ -6,10 +6,10 @@ function Cube() {
         <div>
             <div id="cube-container">
                 <div class="cube">
-                    <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGlnaHR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
-                    <img src="https://38.media.tumblr.com/e5e63479c58f5362c54c93a51e3a3d48/tumblr_nthvcue9iy1tqou9go1_500.gif" />
-                    <img src="https://41.media.tumblr.com/41e0585497f082ef9a6e4f19d2f9c4c5/tumblr_o1cvnwq90X1u7gnm9o1_500.jpg" />
-                    <img src="http://cdnstatic.visualizeus.com/thumbs/f5/7e/night,sky,stars,universe,woods,galaxy-f57e8ae3cacafe11eadddb74e739f734_h.jpg" />
+                    <img src="https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA3fHxpZGVhc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" />
+                    <img src="https://images.unsplash.com/photo-1589561253831-b8421dd58261?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aWRlYXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                    <img src="https://images.unsplash.com/photo-1589561253898-768105ca91a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGlkZWFzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
+                    <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTd8fGlkZWFzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" />
                 </div>
             </div>
         </div>

@@ -33,12 +33,11 @@ function Home() {
                             animateOut='bounceInRight'>
                             <img src={pic} alt="" />
                         </ScrollAnimation>
-
                     </div>
                 </div>
                 <Timeline />
-                <ImgSlider />
                 <Cube />
+                <ImgSlider />
             </div>
             <Footer />
         </>

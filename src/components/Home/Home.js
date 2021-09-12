@@ -8,6 +8,7 @@ import "animate.css/animate.min.css";
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Button from '@material-ui/core/Button';
+import Cube from '../cube/Cube'
 
 function Home() {
     return (
@@ -37,6 +38,7 @@ function Home() {
                 </div>
                 <Timeline />
                 <ImgSlider />
+                <Cube />
             </div>
             <Footer />
         </>

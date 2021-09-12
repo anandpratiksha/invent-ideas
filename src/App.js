@@ -29,7 +29,6 @@ function App() {
           <Route path='/investorPage' component={InvestorPage} />
           <Route path='/ideaPage' component={Ideapage} />
         </SnackbarProvider>
-
       </Switch>
     </Router>
   );

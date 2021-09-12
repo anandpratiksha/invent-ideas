@@ -19,8 +19,7 @@ function App() {
     <Router>
       <Switch>
         <SnackbarProvider maxSnack={3}>
-          {/* <Route path='/' exact component={Home} /> */}
-          <Route path='/' exact component={ContactPage} />
+          <Route path='/' exact component={Home} />
           <Route path='/signupInnovator' component={SignupInnovator} />
           <Route path='/signupInvestor' component={SignupInvestor} />
           <Route path='/signinInnovator' component={SigninInnovator} />
@@ -30,6 +29,7 @@ function App() {
           <Route path='/innovatorProfile' component={InnovatorProfile} />
           <Route path='/investorPage' component={InvestorPage} />
           <Route path='/ideaPage' component={Ideapage} />
+          <Route path='/contactPage' exact component={ContactPage} />
         </SnackbarProvider>
       </Switch>
     </Router>

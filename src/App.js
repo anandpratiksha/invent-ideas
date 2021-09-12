@@ -11,6 +11,7 @@ import InvestorProfile from './components/investorProfile/InvestorProfile.js';
 import InnovatorProfile from './components/innovatorProfile/InnovatorProfile';
 import InvestorPage from './components/investorsPage/InvestorPage';
 import Ideapage from './components/idea/Ideapage';
+import ContactPage from './components/ContactPage/ContactPage';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
     <Router>
       <Switch>
         <SnackbarProvider maxSnack={3}>
-          <Route path='/' exact component={Home} />
+          {/* <Route path='/' exact component={Home} /> */}
+          <Route path='/' exact component={ContactPage} />
           <Route path='/signupInnovator' component={SignupInnovator} />
           <Route path='/signupInvestor' component={SignupInvestor} />
           <Route path='/signinInnovator' component={SigninInnovator} />

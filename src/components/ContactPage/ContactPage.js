@@ -20,10 +20,12 @@ function ContactPage() {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p>Name</p>
-                    <p>Address</p>
-                    <p>Contact</p>
+                <div className="contact">
+                    <p>Idea : Development</p>
+                    <p>Name : Vaulstien Rodrigues</p>
+                    <p>Address : Navi Mumbai Maharashtra 414 001</p>
+                    <p>Phone Number : 1234567890</p>
+                    <p>Email : Vaulstien@gmail.com</p>
                 </div>
             </div>
             <Animation />

@@ -64,3 +64,25 @@ img {
 .heading {
   font-size: 3rem;
 }
+
+.animated{
+  animation: up-down 9s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0%{
+      transform:translateY(5px);
+  }
+  100%{
+      transform:translateY(-5px);
+  }
+}
+
+@keyframes up-down{
+  0%{
+      transform:translateY(5px);
+  }
+  100%{
+      transform:translateY(-5px);
+  }
+}

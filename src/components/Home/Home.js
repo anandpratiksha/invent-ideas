@@ -9,12 +9,15 @@ import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Button from '@material-ui/core/Button';
 import Cube from '../cube/Cube'
+import Status from '../Home/Status'
 
 function Home() {
     return (
         <>
             <Navbar />
+            <Status />
             <div style={{ overflowY: "scroll" }}></div>
+
             <div className="main">
                 <div className="title">
                     <div className="leftside">
@@ -31,7 +34,7 @@ function Home() {
                     <div className="rightside">
                         <ScrollAnimation animateIn='bounceInRight'
                             animateOut='bounceInRight'>
-                            <img src={pic} alt="" />
+                            <img src={pic} alt="" className="animated" />
                         </ScrollAnimation>
                     </div>
                 </div>

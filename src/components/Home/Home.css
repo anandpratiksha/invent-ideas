@@ -71,7 +71,7 @@ img {
 
 @-webkit-keyframes up-down{
   0%{
-      transform:translateY(5px);
+      transform:translateY(10px);
   }
   100%{
       transform:translateY(-5px);
@@ -80,7 +80,7 @@ img {
 
 @keyframes up-down{
   0%{
-      transform:translateY(5px);
+      transform:translateY(10px);
   }
   100%{
       transform:translateY(-5px);

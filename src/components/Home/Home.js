@@ -10,6 +10,7 @@ import Footer from '../Footer/Footer'
 import Button from '@material-ui/core/Button';
 import Cube from '../cube/Cube'
 import Status from '../Home/Status'
+import ScrollUpButton from "react-scroll-up-button";
 
 function Home() {
     return (
@@ -17,7 +18,17 @@ function Home() {
             <Navbar />
             <Status />
             <div style={{ overflowY: "scroll" }}></div>
-
+            <ScrollUpButton ContainerClassName="MyOverRideClass"
+                TransitionClassName="MyOverRideTransitionedClass"
+                StopPosition={0}
+                ShowAtPosition={150}
+                EasingType='easeOutCubic'
+                AnimationDuration={500}
+                ContainerClassName='ScrollUpButton__Container'
+                TransitionClassName='ScrollUpButton__Toggled'
+                style={{}}
+                ToggledStyle={{}}
+            />
             <div className="main">
                 <div className="title">
                     <div className="leftside">

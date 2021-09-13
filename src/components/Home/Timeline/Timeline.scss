@@ -28,6 +28,7 @@ $brand-color:#aa25df;
 }
 .timeline{
   margin: 5rem;
+  margin-top: -5rem;
 }
 .ps-timeline-sec {
     position: relative;
@@ -35,7 +36,7 @@ $brand-color:#aa25df;
 
     .container-timeline {
         position: relative;
-      font-family: 'Lato', sans-serif;
+    //   font-family: 'Lato', sans-serif;
 
         ol {
 
@@ -47,7 +48,7 @@ $brand-color:#aa25df;
                     height: 10px;
                     border-radius: 100%;
                     position: absolute;
-                    top: 130px !important;
+                    // top: 130px !important;
                     left: 36px !important;
                 }
 
@@ -58,15 +59,15 @@ $brand-color:#aa25df;
                     height: 10px;
                     border-radius: 100%;
                     position: absolute;
-                    top: inherit !important;
+                    // top: inherit !important;
                     left: 36px;
                 }
 
                 &.ps-timeline {
-                    margin: 130px 0 !important;
+                    // margin: 130px 0 !important;
                     border-left: 2px solid #348e80;
                     padding-left: 0 !important;
-                    padding-top: 120px !important;
+                    // padding-top: 120px !important;
                     border-top: 0 !important;
                     margin-left: 25px !important;
 

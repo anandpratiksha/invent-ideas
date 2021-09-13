@@ -1,14 +1,7 @@
-.slider {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+
   .image {
-    width: 30rem;
-    height: 200px;
+    /* width: 30rem; */
+    /* height: 200px; */
     border-radius: 10px;
   }
   
@@ -48,4 +41,10 @@
 .slick-slide img {
   display: block;
   height: 15rem;
+}
+
+.imgslider{
+  height:80%;
+  width: 99%;
+  padding-left: 10rem;
 }

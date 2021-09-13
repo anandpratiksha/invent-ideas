@@ -6,7 +6,6 @@ import p1 from '../../gifs/page1.gif';
 import p2 from '../../gifs/page2.gif';
 import p3 from '../../gifs/page3.gif';
 import p4 from '../../gifs/page4.gif';
-import '../Home.css'
 import '../Caroussel/Carousel.css'
 
 export default class PauseOnHover extends Component {
@@ -23,6 +22,7 @@ export default class PauseOnHover extends Component {
     return (
       <div className="imgslider">
         <p className="heading" align="center">Acomplishment</p>
+        <br />
         <Slider {...settings}>
           <div>
             <img src={p1} alt="" />

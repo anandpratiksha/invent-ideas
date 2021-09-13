@@ -109,5 +109,23 @@
 
 .contact{
     display: grid;
+    margin: 2rem;
     padding:2rem;
+    background: rgba( 214, 188, 239, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.contact-content{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.icons{
+    color: rgb(93, 15, 236);
+    margin-right:1rem;
 }

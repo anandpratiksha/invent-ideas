@@ -52,6 +52,7 @@ function Home() {
                 <Timeline />
                 <Cube />
                 <ImgSlider />
+                <br /><br />
             </div>
             <Footer />
         </>

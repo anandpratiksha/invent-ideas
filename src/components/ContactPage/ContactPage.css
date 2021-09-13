@@ -23,7 +23,7 @@
     background: url(https://github.com/kunaal438/card-hover/blob/master/img.jpg?raw=true);
     background-size: cover;
     border-radius: 20px;
-    transform: translateZ(40px);
+    transform: translateZ(5px);
 }
 
 .card-body{

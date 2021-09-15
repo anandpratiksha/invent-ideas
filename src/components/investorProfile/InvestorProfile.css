@@ -6,14 +6,14 @@
 
 .profilePic {
   position: absolute;
-  margin: 7% auto auto -30%;
+  margin: 7% auto auto -25%;
   box-shadow: 1px 1px 10px rgb(125, 132, 230), 1px 1px 10px rgb(125, 149, 196);
 }
 
 .profileName {
   position: absolute;
   left: 38%;
-  top: 8%;
+  top: 20%;
   font-size: 3rem;
 }
 
@@ -24,7 +24,7 @@
   margin: 10px;
   text-align: center;
   left: 37%;
-  top: 18%;
+  top: 28%;
   font-size: 1.5rem;
 }
 

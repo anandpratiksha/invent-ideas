@@ -24,7 +24,7 @@ function Ideapage({ ideaItems }) {
             <div className="idea">
 
                 <div className="idea-contents">
-                    <Avatar alt="avatar" src={avatar} className={classes.large} />
+                    <img alt="avatar" src={avatar} className='ideaImage' />
 
                     <h2 className="name">Name:<span>Lenin Dallas</span></h2>
                     <h2 className="date">Date:9/9/21</h2>

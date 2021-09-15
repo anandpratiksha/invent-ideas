@@ -1,11 +1,11 @@
-import React from 'react'
-import Nav from '../Navbar/Navbar'
+import React from 'react';
+import Nav from '../Navbar/Navbar';
 import Chip from '@material-ui/core/Chip';
 import { Avatar } from '@material-ui/core';
-import '../ideaShort/IdeaShort.css'
-import Animation from '../animation/Animation';
-import innovatorItems from '../ideaShort/data'
+import '../ideaShort/IdeaShort.css';
+import innovatorItems from '../ideaShort/data';
 import IdeaShort from '../ideaShort/IdeaShort';
+import Footer from '../Footer/Footer.js';
 
 function InvestorsPage() {
     return (
@@ -47,7 +47,7 @@ function InvestorsPage() {
                     <IdeaShort innovatorItems={innovatorItems} />
                 </div>
             </div>
-            <Animation />
+            <Footer />
         </div>
     )
 }

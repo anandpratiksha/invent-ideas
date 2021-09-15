@@ -28,12 +28,27 @@ function Form1() {
     const classes = useStyles();
 
     const [title, setTitle] = useState('');
-    const [category, setCategory] = React.useState(['It']);
+    const [category, setCategory] = useState(['It']);
     const [description, setDescription] = useState('');
     const [innovative, setInnovative] = useState('');
     const [competitors, setCompetitors] = useState('');
     const [completedAny, setCompletedAny] = useState(['Industrial design']);
     const [possessionAny, setPossessionAny] = useState(["Technical drawing"]);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const data = {
+            title,
+            category,
+            description,
+            innovative,
+            competitors,
+            completedAny,
+            possessionAny,
+        }
+        console.log(data)
+    }
 
     const handleToggle = (value) => () => {
         const currentIndex = category.indexOf(value);
@@ -75,7 +90,7 @@ function Form1() {
     };
 
     return (
-        <form className={classes.root} noValidate autoComplete="off">
+        <form className={classes.root} noValidate autoComplete="off" onSubmit={(e) => handleSubmit(e)}>
 
             <div>
                 <TextField
@@ -208,7 +223,7 @@ function Form1() {
                     </div>
                 </div>
             </div>
-            <Button variant="contained" className='formButton'>Save and Continue</Button>
+            <Button variant="contained" className='formButton' type='submit'>Save and Continue</Button>
         </form>
     );
 }

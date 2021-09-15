@@ -24,9 +24,14 @@ function Form3(props) {
         setState({ ...state, [event.target.name]: event.target.checked });
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(state)
+    };
+
     return (
         <div>
-            <FormGroup column className='ipContainer'>
+            <FormGroup column className='ipContainer' onSubmit={(e) => handleSubmit(e)}>
                 <FormControlLabel
                     control={
                         <Switch
@@ -126,8 +131,9 @@ function Form3(props) {
                     }
                     label="Have you explained your invention in public places"
                 />
+
             </FormGroup>
-            <Button variant="contained" className='formButton radioButton'>Save and Continue</Button>
+            <Button variant="contained" className='formButton radioButton' onClick={(e) => handleSubmit(e)}>Save and Continue</Button>
 
         </div>
     );

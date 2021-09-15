@@ -7,50 +7,56 @@ import step4 from '../../img/step4.png'
 
 function Timeline() {
     return (
-        <div className="timeline">
-            <section className="ps-timeline-sec">
-                <div className="container-timeline">
-                    <ol className="ps-timeline">
-                        <li>
-                            <div className="ps-top">
-                                <p><h4>Step1</h4>Innovator submit their ideas to our platform.</p>
-                            </div>
-                            <div className="ps-bot">
-                                <h5>Post your ideas</h5>
-                            </div>
-                            <span className="ps-sp-top"><img className="timeline-img" src={step1} alt="" /></span>
-                        </li>
-                        <li>
-                            <div className="ps-bot">
-                                <p><h4>step2</h4>Investors select any ideas they are interested in.</p>
-                            </div>
-                            <div className="ps-top">
-                                <h5>Collection of ideas</h5>
-                            </div>
-                            <span className="ps-sp-bot"><img className="timeline-img" src={step2} alt="" /></span>
-                        </li>
-                        <li>
-                            <div className="ps-top">
-                                <p><h4>Step3</h4>Being interested in an idea investor contacts innovator for furture process.</p>
-                            </div>
-                            <div className="ps-bot">
-                                <h5>Connecting investor and innovator</h5>
-                            </div>
-                            <span className="ps-sp-top"><img className="timeline-img" src={step3} alt="" /></span>
-                        </li>
-                        <li>
-                            <div className="ps-bot">
-                                <p><h4>Step4</h4>Finally the product of investor and innovator is  now available in market.</p>
-                            </div>
-                            <div className="ps-top">
-                                <h5>Product in market</h5>
-                            </div>
-                            <span className="ps-sp-bot"><img className="timeline-img" src={step4} alt="" /></span>
-                        </li>
-                    </ol>
-                </div>
-            </section>
+        <div className="timelineContainer">
+            <h1 className="timelineTextHeading" >How it Works</h1>
+            <div className="timeline">
+                <section className="ps-timeline-sec">
+                    {/* <h1 className="text-center">How Its works</h1> */}
+                    <div className="container-timeline">
+                        {/* <h1 className="text-center">How Its works</h1> */}
+                        <ol className="ps-timeline">
+                            <li>
+                                <div className="ps-top">
+                                    <p><h4>Step1</h4>Innovator submit their ideas to our platform.</p>
+                                </div>
+                                <div className="ps-bot">
+                                    <h5>Post your ideas</h5>
+                                </div>
+                                <span className="ps-sp-top"><img className="timeline-img" src={step1} alt="" /></span>
+                            </li>
+                            <li>
+                                <div className="ps-bot">
+                                    <p><h4>step2</h4>Investors select any ideas they are interested in.</p>
+                                </div>
+                                <div className="ps-top">
+                                    <h5>Collection of ideas</h5>
+                                </div>
+                                <span className="ps-sp-bot"><img className="timeline-img" src={step2} alt="" /></span>
+                            </li>
+                            <li>
+                                <div className="ps-top">
+                                    <p><h4>Step3</h4>Being interested in an idea investor contacts innovator for furture process.</p>
+                                </div>
+                                <div className="ps-bot">
+                                    <h5>Connecting investor and innovator</h5>
+                                </div>
+                                <span className="ps-sp-top"><img className="timeline-img" src={step3} alt="" /></span>
+                            </li>
+                            <li>
+                                <div className="ps-bot">
+                                    <p><h4>Step4</h4>Finally the product of investor and innovator is  now available in market.</p>
+                                </div>
+                                <div className="ps-top">
+                                    <h5>Product in market</h5>
+                                </div>
+                                <span className="ps-sp-bot"><img className="timeline-img" src={step4} alt="" /></span>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
         </div>
+
     )
 }
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 
 import {
     ThemeProvider,
@@ -19,7 +20,8 @@ import './Signup.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { innovatorSignup } from '../../redux/actions/signupActions';
 import Loading from '../loading/Loading.js';
-import { SnackbarProvider, useSnackbar } from 'notistack';
+import { useSnackbar } from 'notistack';
+import Footer from '../Footer/Footer';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -103,16 +105,18 @@ function SignupInnovator(props) {
     const { loading, user, userError } = userFromReducer;
     //  console.log(userError, 'user')
 
-    if (user) {
-        props.history.push('/')
-    }
+
 
     useEffect(() => {
         if (userError) {
             // console.log('user error in else if')
             handleSnackbar('Signup was not successful, Please try again', 'error');
+        } else if (user) {
+            handleSnackbar('Signup was successful', 'success');
+            props.history.push('/');
         }
-    }, [userError])
+        // eslint-disable-next-line
+    }, [userError, user])
 
 
     const classes = useStyles();
@@ -129,6 +133,7 @@ function SignupInnovator(props) {
         }
         if (pincode.length !== 6) {
             alert('Pincode should consists of 6 digits');
+            return;
         }
         // console.log('working')
         const data = {
@@ -167,7 +172,7 @@ function SignupInnovator(props) {
                 setPicture(data.secure_url)
             })
 
-            .catch((err) => console.log(err));
+            .catch((err) => alert('Image upload unsuccessful, Please try again.'));
     }
 
     if (loading) {
@@ -177,160 +182,166 @@ function SignupInnovator(props) {
     }
 
     return (
-        <div className='formContainer'>
-            <div className='formBlock'>
-                <form className={classes.root} onSubmit={(e) => handleSubmit(e)}>
-                    <Avatar
-                        alt="Remy Sharp"
-                        src={picture ? picture : "https://bit.ly/3td6kYa"}
-                        className="profileAvatar"
-                    />
-                    <div className="formTitle" >
-                        <u> Innovator Signup </u>
-                    </div>
+        <>
 
-                    <ThemeProvider theme={theme}>
-                        <div className='rowedInput'>
-                            <TextField
-                                className={classes.margin}
-                                label="Fullname"
-                                variant="outlined"
-                                type='text'
-                                required
-                                value={fullname}
-                                onChange={(e) => setFullname(e.target.value)}
-                            />
-                            <TextField
-                                className={classes.margin}
-                                label="E-mail"
-                                variant="outlined"
-                                type='email'
-                                required
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                            />
+            <div className='formContainer'>
+                <Navbar className='navbarForm' />
+                <div className='formBlock'>
+                    <form className={classes.root} onSubmit={(e) => handleSubmit(e)}>
+                        <Avatar
+                            alt="Remy Sharp"
+                            src={picture ? picture : "https://bit.ly/3td6kYa"}
+                            className="profileAvatar"
+                        />
+                        <div className="formTitle" >
+                            <u> Innovator Signup </u>
                         </div>
-                        <div className='rowedInput'>
-                            <TextField
-                                className={classes.margin}
-                                label="Password"
-                                variant="outlined"
-                                type='password'
-                                required
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
-                            <TextField
-                                className={classes.margin}
-                                label="Re-type Password"
-                                variant="outlined"
-                                type='password'
-                                required
-                                value={rePassword}
-                                onChange={(e) => setRePassword(e.target.value)}
-                            />
-                        </div>
-                        <div className='rowedInput'>
-                            <TextField
-                                className={classes.margin}
-                                label="Mobile Number"
-                                variant="outlined"
-                                type='tel'
-                                required
-                                value={mobile}
-                                onChange={(e) => setMobile(e.target.value)}
-                            />
 
-                            <TextField
-                                className={classes.margin}
-                                label="Occupation"
-                                variant="outlined"
-                                type='text'
-                                required
-                                value={occupation}
-                                onChange={(e) => setOccupation(e.target.value)}
-                            />
-                        </div>
-                        <div className='rowedInput'>
-                            <TextField
-                                className={classes.margin}
-                                label="City"
-                                variant="outlined"
-                                type='text'
-                                required
-                                value={city}
-                                onChange={(e) => setCity(e.target.value)}
-                            />
-                            <TextField
-                                className={classes.margin}
-                                label="District"
-                                variant="outlined"
-                                type='text'
-                                required
-                                value={district}
-                                onChange={(e) => setDistrict(e.target.value)}
-                            />
-                        </div>
-                        <div className='rowedInput'>
-                            <TextField
-                                className={classes.margin}
-                                label="State"
-                                variant="outlined"
-                                type='text'
-                                required
-                                value={state}
-                                onChange={(e) => setState(e.target.value)}
-                            />
-                            <TextField
-                                className={classes.margin}
-                                label="Pincode"
-                                variant="outlined"
-                                type='number'
-                                required
-                                value={pincode}
-                                onChange={(e) => setPincode(e.target.value)}
-                            />
-                        </div>
-                        <div className='rowedInput'>
-                            <FormControl className={classes.margin}>
-                                <InputLabel shrink htmlFor="bootstrap-input">
-                                    Profile Picture
-                                </InputLabel>
-                                <BootstrapInput id="bootstrap-input"
-                                    value=''
-                                    onChange={(e) => avatarPicker(e.target.files[0])}
-                                    type="file"
+                        <ThemeProvider theme={theme}>
+                            <div className='rowedInput'>
+                                <TextField
+                                    className={classes.margin}
+                                    label="Fullname"
+                                    variant="outlined"
+                                    type='text'
+                                    required
+                                    value={fullname}
+                                    onChange={(e) => setFullname(e.target.value)}
                                 />
-                            </FormControl>
-
-                            <FormControl className={classes.margin}>
-                                <InputLabel shrink htmlFor="bootstrap-input">
-                                    Aadhaar Card
-                                </InputLabel>
-                                <BootstrapInput id="bootstrap-input"
-                                    value={document}
-                                    onChange={(e) => setDocument(e.target.files[0])}
-                                    type="file"
+                                <TextField
+                                    className={classes.margin}
+                                    label="E-mail"
+                                    variant="outlined"
+                                    type='email'
+                                    required
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                 />
-                            </FormControl>
-                        </div>
-                    </ThemeProvider>
-                    <Button variant="contained" className="btn btn-primary" type='submit'>
-                        Submit
-                    </Button>
+                            </div>
+                            <div className='rowedInput'>
+                                <TextField
+                                    className={classes.margin}
+                                    label="Password"
+                                    variant="outlined"
+                                    type='password'
+                                    required
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
+                                <TextField
+                                    className={classes.margin}
+                                    label="Re-type Password"
+                                    variant="outlined"
+                                    type='password'
+                                    required
+                                    value={rePassword}
+                                    onChange={(e) => setRePassword(e.target.value)}
+                                />
+                            </div>
+                            <div className='rowedInput'>
+                                <TextField
+                                    className={classes.margin}
+                                    label="Mobile Number"
+                                    variant="outlined"
+                                    type='tel'
+                                    required
+                                    value={mobile}
+                                    onChange={(e) => setMobile(e.target.value)}
+                                />
 
-                </form>
+                                <TextField
+                                    className={classes.margin}
+                                    label="Occupation"
+                                    variant="outlined"
+                                    type='text'
+                                    required
+                                    value={occupation}
+                                    onChange={(e) => setOccupation(e.target.value)}
+                                />
+                            </div>
+                            <div className='rowedInput'>
+                                <TextField
+                                    className={classes.margin}
+                                    label="City"
+                                    variant="outlined"
+                                    type='text'
+                                    required
+                                    value={city}
+                                    onChange={(e) => setCity(e.target.value)}
+                                />
+                                <TextField
+                                    className={classes.margin}
+                                    label="District"
+                                    variant="outlined"
+                                    type='text'
+                                    required
+                                    value={district}
+                                    onChange={(e) => setDistrict(e.target.value)}
+                                />
+                            </div>
+                            <div className='rowedInput'>
+                                <TextField
+                                    className={classes.margin}
+                                    label="State"
+                                    variant="outlined"
+                                    type='text'
+                                    required
+                                    value={state}
+                                    onChange={(e) => setState(e.target.value)}
+                                />
+                                <TextField
+                                    className={classes.margin}
+                                    label="Pincode"
+                                    variant="outlined"
+                                    type='number'
+                                    required
+                                    value={pincode}
+                                    onChange={(e) => setPincode(e.target.value)}
+                                />
+                            </div>
+                            <div className='rowedInput'>
+                                <FormControl className={classes.margin}>
+                                    <InputLabel shrink htmlFor="bootstrap-input">
+                                        Profile Picture
+                                    </InputLabel>
+                                    <BootstrapInput id="bootstrap-input"
+                                        value=''
+                                        onChange={(e) => avatarPicker(e.target.files[0])}
+                                        type="file"
+                                    />
+                                </FormControl>
 
-                <>
-                    <p className="alreadyHave">Already have an account ?
-                        <Link to='/signinInnovator'>
-                            Signin
-                        </Link>
-                    </p>
-                </>
+                                <FormControl className={classes.margin}>
+                                    <InputLabel shrink htmlFor="bootstrap-input">
+                                        Aadhaar Card
+                                    </InputLabel>
+                                    <BootstrapInput id="bootstrap-input"
+                                        value={document}
+                                        onChange={(e) => setDocument(e.target.files[0])}
+                                        type="file"
+                                    />
+                                </FormControl>
+                            </div>
+                        </ThemeProvider>
+                        <Button variant="contained" className="btn btn-primary" type='submit'>
+                            Submit
+                        </Button>
+
+                    </form>
+
+                    <>
+                        <p className="alreadyHave">Already have an account ?
+                            <Link to='/signin-innovator'>
+                                Signin
+                            </Link>
+                        </p>
+                    </>
+
+                </div>
+
             </div>
-
-        </div>
+            {/* <Footer /> */}
+        </>
     );
 }
 

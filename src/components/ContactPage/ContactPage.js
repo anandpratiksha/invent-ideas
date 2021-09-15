@@ -25,7 +25,7 @@ function ContactPage() {
                         </div>
                     </div>
                 </div>
-                <div className="contact">
+                <div className="contactInfo">
                     <div className="contact-content">
                         <EmojiObjectsIcon className="icons" /> <p>Idea : Development</p>
                     </div>

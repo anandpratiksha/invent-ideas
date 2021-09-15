@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import {
@@ -16,9 +16,12 @@ import InputBase from "@material-ui/core/InputBase";
 import { purple } from "@material-ui/core/colors";
 import Button from '@material-ui/core/Button';
 import './Signup.css'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { investorSignup } from '../../redux/actions/signupActions';
-
+import Loading from '../loading/Loading.js';
+import { useSnackbar } from 'notistack';
+import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -76,6 +79,8 @@ function SignupInvestor(props) {
 
     const dispatch = useDispatch();
 
+    const { enqueueSnackbar } = useSnackbar();
+
     const [fullname, setFullname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -88,6 +93,27 @@ function SignupInvestor(props) {
     const [pincode, setPincode] = useState('');
     const [business, setBusiness] = useState('');
     const [document, setDocument] = useState('');
+
+
+    const userFromReducer = useSelector((state) => state.signupInvestor);
+
+    const handleSnackbar = (value, variant) => {
+        // console.log('from function', value)
+        enqueueSnackbar(value, { variant });
+    };
+
+    const { loading, user, userError } = userFromReducer;
+
+    useEffect(() => {
+        if (userError) {
+            // console.log('user error in else if')
+            handleSnackbar('Signup was not successful, Please try again', 'error');
+        } else if (user) {
+            handleSnackbar('Signup was successful', 'success');
+            props.history.push('/');
+        }
+        // eslint-disable-next-line
+    }, [userError, user])
 
 
     const classes = useStyles();
@@ -104,6 +130,7 @@ function SignupInvestor(props) {
         }
         if (pincode.length !== 6) {
             alert('Pincode should consists of 6 digits');
+            return;
         }
         // console.log('working')
         const data = {
@@ -141,11 +168,18 @@ function SignupInvestor(props) {
                 setPicture(data.secure_url)
             })
 
-            .catch((err) => console.log(err));
+            .catch((err) => alert('Image upload unsuccessful, Please try again.'));
+    }
+
+    if (loading) {
+        return (
+            <Loading />
+        )
     }
 
     return (
         <div className='formContainer'>
+            <Navbar />
             <div className='formBlock'>
                 <form className={classes.root} onSubmit={(e) => handleSubmit(e)}>
                     <Avatar
@@ -288,12 +322,12 @@ function SignupInvestor(props) {
 
                 </form>
                 <p className="alreadyHave">Already have an account ?
-                    <Link to='/signinInvestor'>
+                    <Link to='/signin-investor'>
                         Signin
                     </Link>
                 </p>
             </div>
-
+            {/* <Footer /> */}
         </div>
     );
 }

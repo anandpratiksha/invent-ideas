@@ -93,7 +93,12 @@ function Form2() {
             })
 
             .catch((err) => alert('Image upload not successful, try again.'));
-    }
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(images)
+    };
 
 
     return (
@@ -119,7 +124,7 @@ function Form2() {
                     />
                 </FormControl>
             </div>
-            <Button variant="contained" className='formButton imageFormButton'>Save and Continue</Button>
+            <Button variant="contained" className='formButton imageFormButton' onClick={(e) => handleSubmit(e)}>Save and Continue</Button>
         </div>
 
     );

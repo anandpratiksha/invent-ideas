@@ -13,23 +13,22 @@ import InvestorPage from './components/investorsPage/InvestorPage';
 import Ideapage from './components/idea/Ideapage';
 import ContactPage from './components/ContactPage/ContactPage';
 
-
 function App() {
   return (
     <Router>
       <Switch>
         <SnackbarProvider maxSnack={3}>
           <Route path='/' exact component={Home} />
-          <Route path='/signupInnovator' component={SignupInnovator} />
-          <Route path='/signupInvestor' component={SignupInvestor} />
-          <Route path='/signinInnovator' component={SigninInnovator} />
-          <Route path='/signinInvestor' component={SigninInvestor} />
-          <Route path='/innovatorForm' component={InnovatorForm} />
-          <Route path='/investorProfile' component={InvestorProfile} />
-          <Route path='/innovatorProfile' component={InnovatorProfile} />
-          <Route path='/investorPage' component={InvestorPage} />
-          <Route path='/ideaPage' component={Ideapage} />
-          <Route path='/contactPage' exact component={ContactPage} />
+          <Route path='/signup-innovator' component={SignupInnovator} />
+          <Route path='/signup-investor' component={SignupInvestor} />
+          <Route path='/signin-innovator' component={SigninInnovator} />
+          <Route path='/signin-investor' component={SigninInvestor} />
+          <Route path='/innovator-form' component={InnovatorForm} />
+          <Route path='/investor-profile' component={InvestorProfile} />
+          <Route path='/innovator-profile' component={InnovatorProfile} />
+          <Route path='/investor-page' component={InvestorPage} />
+          <Route path='/idea-page' component={Ideapage} />
+          <Route path='/contact-page' exact component={ContactPage} />
         </SnackbarProvider>
       </Switch>
     </Router>

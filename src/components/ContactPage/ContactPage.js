@@ -43,6 +43,7 @@ function ContactPage() {
                     </div>
                 </div>
             </div>
+            <br />
             <Animation />
         </div>
     )

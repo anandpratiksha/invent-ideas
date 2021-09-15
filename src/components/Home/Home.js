@@ -15,46 +15,48 @@ import ScrollUpButton from "react-scroll-up-button";
 function Home() {
     return (
         <>
-            <Navbar />
-            <Status />
-            <div style={{ overflowY: "scroll" }}></div>
-            <ScrollUpButton ContainerClassName="MyOverRideClass"
-                TransitionClassName="MyOverRideTransitionedClass"
-                StopPosition={0}
-                ShowAtPosition={150}
-                EasingType='easeOutCubic'
-                AnimationDuration={500}
-                ContainerClassName='ScrollUpButton__Container'
-                TransitionClassName='ScrollUpButton__Toggled'
-                style={{}}
-                ToggledStyle={{}}
-            />
-            <div className="main">
-                <div className="title">
-                    <div className="leftside">
-                        <p className="description">We connect Innovators with Investors to bring new products to market.</p>
-                        <div className="left">
-                            <Button variant="contained">
-                                Investor
+            <div className="scrollbar scrollbar-juicy-peach">
+                <Navbar />
+                <Status />
+                <div style={{ overflowY: "scroll" }}></div>
+                <ScrollUpButton ContainerClassName="MyOverRideClass"
+                    TransitionClassName="MyOverRideTransitionedClass"
+                    StopPosition={0}
+                    ShowAtPosition={150}
+                    EasingType='easeOutCubic'
+                    AnimationDuration={500}
+                    ContainerClassName='ScrollUpButton__Container'
+                    TransitionClassName='ScrollUpButton__Toggled'
+                    style={{}}
+                    ToggledStyle={{}}
+                />
+                <div className="main">
+                    <div className="title">
+                        <div className="leftside">
+                            <p className="description">We connect Innovators with Investors to bring new products to market.</p>
+                            <div className="left">
+                                <Button variant="contained">
+                                    Investor
                             </Button>
-                            <Button variant="contained" >
-                                Innovator
+                                <Button variant="contained" >
+                                    Innovator
                             </Button>
+                            </div>
+                        </div>
+                        <div className="rightside">
+                            <ScrollAnimation animateIn='bounceInRight'
+                                animateOut='bounceInRight'>
+                                <img src={pic} alt="" className="animated" />
+                            </ScrollAnimation>
                         </div>
                     </div>
-                    <div className="rightside">
-                        <ScrollAnimation animateIn='bounceInRight'
-                            animateOut='bounceInRight'>
-                            <img src={pic} alt="" className="animated" />
-                        </ScrollAnimation>
-                    </div>
+                    <Timeline />
+                    <Cube />
+                    <ImgSlider />
+                    <br /><br />
                 </div>
-                <Timeline />
-                <Cube />
-                <ImgSlider />
-                <br /><br />
+                <Footer />
             </div>
-            <Footer />
         </>
     )
 }

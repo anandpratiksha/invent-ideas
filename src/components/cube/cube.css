@@ -1,11 +1,15 @@
 .text-center {
 	margin: 5px;
 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
+	/* font-family: 'Open Sans', sans-serif; */
+	text-align: center;
+	margin-top:-13rem;
+	line-height: 150px;
+	text-decoration:underline;
 }
 #cube-container {
-	width: 240px;
-	height: 240px;
+	width: 290px;
+	height: 290px;
 	margin: 80px auto;
 	perspective: 800px;			
 }

@@ -24,6 +24,12 @@
   text-align: center;
 }
 
+/* @media (max-width: 80em) {
+  .description{
+    font-size: 5.76rem;
+  }
+} */
+
 .MuiButton-contained {
   background-color: #7d2ae8 !important;
   font-size: 1.2rem !important;
@@ -69,6 +75,25 @@ img {
 .animated {
   animation: up-down 9s ease-in-out infinite alternate-reverse both;
 }
+/* 
+@media (max-width: 80em) {
+ .animated {
+   height:15rem;
+  }
+} */
+
+@media (max-width: 660px){
+  .animated {
+    height:11rem;
+    /* margin-top: 4rem; */
+   }
+   .description{
+     font-size:1.8rem;
+   }
+   .title{
+     display:grid;
+   }
+ }
 
 @-webkit-keyframes up-down {
   0% {
@@ -87,3 +112,5 @@ img {
     transform: translateY(-5px);
   }
 }
+
+

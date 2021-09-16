@@ -39,7 +39,7 @@ function Home() {
     }, [userFromReducer.user])
 
     const [investor, setInvestor] = React.useState(userFromReducer.user?.data.investor);
-    const [innovator, setInnovator] = React.useState(userFromReducer.user?.data.investor)
+    const [innovator, setInnovator] = React.useState(userFromReducer.user?.data.innovator);
 
     return (
         <>

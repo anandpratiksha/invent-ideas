@@ -6,23 +6,24 @@
   border: 3px solid rgb(112, 110, 110);
   border-radius: 15px;
   background-color: #f0eaf0;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0.12), 1px 1px 5px rgba(0, 0, 0.24);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0.12, 0.2),
+    1px 1px 5px rgba(0, 0, 0.24, 0.2);
 }
 
 .loading__image {
   position: absolute;
   /* border: 3px solid #000; */
-  margin: 25% 30.5%;
+  margin: 40% 40%;
   width: 80%;
 }
 
 .spinner {
-  width: 50%;
-  height: 50%;
+  width: 20%;
+  height: 20%;
 }
 
 .spinner__text {
   position: absolute;
-  margin-left: 17%;
-  color: #37a9df;
+  color: #7d2ae8;
+  font-weight: 600;
 }

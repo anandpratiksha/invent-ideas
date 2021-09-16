@@ -1,7 +1,7 @@
 .idea {
   margin: 0 80px;
-  border: 3px solid rgb(182, 175, 175);
-  border-radius: 1.5rem;
+  /* border: 3px solid rgb(182, 175, 175);
+  border-radius: 1.5rem; */
   padding: 1rem;
   margin-bottom: 3rem;
 }
@@ -16,7 +16,7 @@
 }
 
 .idea-title {
-  margin-left: 15%;
+  margin: -2% 10% 0 10%;
 }
 
 .name,
@@ -29,6 +29,8 @@
   width: 6%;
   height: 6%;
   border: 4px solid #7d2ae8;
+  position: inherit;
+  margin-top: 1%;
 }
 
 .navigation_button {

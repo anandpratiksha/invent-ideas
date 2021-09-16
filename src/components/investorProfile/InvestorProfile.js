@@ -39,9 +39,9 @@ function InvestorProfile(props) {
                 <div className='ideaSection'>
                     <div className='ideaSectionTitle'><u>Invested ideas</u></div>
                     {
-                        investedIdea && investedIdea.map((item) => {
+                        investedIdea && investedIdea.map((item, idx) => {
                             return (
-                                <ProfileIdea ideaName={item.ideaName} description={item.description} />
+                                <ProfileIdea key={idx} ideaName={item.ideaName} description={item.description} />
                             )
                         })
                     }
@@ -49,9 +49,9 @@ function InvestorProfile(props) {
                 <div className='ideaSection'>
                     <div className='ideaSectionTitle'><u>Interested ideas</u></div>
                     {
-                        interestedIdea && interestedIdea.map((item) => {
+                        interestedIdea && interestedIdea.map((item, idx) => {
                             return (
-                                <ProfileIdea ideaName={item.ideaName} description={item.description} />
+                                <ProfileIdea key={idx} ideaName={item.ideaName} description={item.description} />
                             )
                         })
                     }

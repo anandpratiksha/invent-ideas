@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../Navbar/Navbar'
 import './ContactPage.css'
 import Animation from '../animation/Animation'
@@ -7,8 +7,18 @@ import DescriptionIcon from '@material-ui/icons/Description';
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
+import data from '../ideaShort/data.js';
 
-function ContactPage() {
+function ContactPage(props) {
+
+    const user = data.filter((item) => item.id === props.match.params.id);
+
+    const [ideaItem, setIdeaItem] = useState('')
+
+    useEffect(() => {
+        setIdeaItem(user)
+    }, [props.match.params.id])
+
     return (
         <div>
             <Navbar />
@@ -27,19 +37,20 @@ function ContactPage() {
                 </div>
                 <div className="contactInfo">
                     <div className="contact-content">
-                        <EmojiObjectsIcon className="icons" /> <p>Idea : Development</p>
+                        <EmojiObjectsIcon className="icons" /> <p>Idea : {ideaItem[0]?.title}</p>
                     </div>
                     <div className="contact-content">
-                        <DescriptionIcon className="icons" /> <p>Name : Vaulstien Rodrigues</p>
+                        <DescriptionIcon className="icons" /> <p>Name : {ideaItem[0]?.name}</p>
                     </div>
                     <div className="contact-content">
-                        <ContactMailIcon className="icons" />  <p>Address : Navi Mumbai Maharashtra 414 001</p>
+                        <EmailIcon className="icons" /> <p>Email : {ideaItem[0]?.email}</p>
                     </div>
                     <div className="contact-content">
-                        <CallIcon className="icons" />  <p>Phone Number : 1234567890</p>
+                        <CallIcon className="icons" />  <p>Phone Number : {ideaItem[0]?.mobileno}</p>
                     </div>
                     <div className="contact-content">
-                        <EmailIcon className="icons" /> <p>Email : Vaulstien@gmail.com</p>
+
+                        <ContactMailIcon className="icons" />  <p>Address : {ideaItem[0]?.address}</p>
                     </div>
                 </div>
             </div>

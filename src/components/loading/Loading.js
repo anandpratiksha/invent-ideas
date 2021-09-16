@@ -1,6 +1,6 @@
 import React from 'react';
 import './Loading.css';
-import load from './load.gif';
+import load from './load2.gif';
 
 function Loading(props) {
     return (

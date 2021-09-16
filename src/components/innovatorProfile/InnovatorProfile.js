@@ -38,9 +38,9 @@ function InnovatorProfile(props) {
                 <div className='ideaSection'>
                     <div className='ideaSectionTitle'><u>Uploaded ideas</u></div>
                     {
-                        postedIdea && postedIdea.map((item) => {
+                        postedIdea && postedIdea.map((item, idx) => {
                             return (
-                                <ProfileIdea ideaName={item.ideaName} description={item.description} />
+                                <ProfileIdea key={idx} ideaName={item.ideaName} description={item.description} />
                             )
                         })
                     }

@@ -45,12 +45,29 @@ const Navbar = () => {
         };
     }
 
+    const handleProfile = () => {
+        if (!investor && !innovator) {
+            alert('Login to continue')
+        }
+    }
+
     return (
         <>
             <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
                 <NavContainer>
-                    <NavLogo href="/"><img src={logo} alt="page_logo" /></NavLogo>
+                    <Link to='/'>
+                        <NavLogo >
+                            <img src={logo} alt="page_logo" />
+                        </NavLogo>
+                    </Link>
                     <NavMenu>
+                        <NavItem>
+                            <Button className='navigation_button' >
+                                <Link to={innovator ? '/innovator-profile' : investor ? '/investor-profile' : '/'} onClick={() => handleProfile()} className='globalLink'>
+                                    Profile
+                                </ Link>
+                            </Button>
+                        </NavItem>
                         <NavItem>
                             <Button className='navigation_button'>
                                 {/* <Link to='signin-investor' className='globalLink'> */}

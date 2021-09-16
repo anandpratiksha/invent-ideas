@@ -27,8 +27,8 @@ function App() {
           <Route path='/investor-profile' component={InvestorProfile} />
           <Route path='/innovator-profile' component={InnovatorProfile} />
           <Route path='/investor-page' component={InvestorPage} />
-          <Route path='/idea-page' component={Ideapage} />
-          <Route path='/contact-page' exact component={ContactPage} />
+          <Route path='/idea-page/:id' component={Ideapage} />
+          <Route path='/contact-page/:id' exact component={ContactPage} />
         </SnackbarProvider>
       </Switch>
     </Router>

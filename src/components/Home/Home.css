@@ -95,7 +95,7 @@ img {
 
 @media (max-width: 767px){
   .animated {
-    height:11rem;
+    height:10rem;
     /* margin-top: 4rem; */
    }
    .description{
@@ -108,7 +108,7 @@ img {
 
  @media (max-width:1300px){
   .animated {
-    height:17rem;
+    height:15rem;
     /* margin-top: 4rem; */
    }
    .description{

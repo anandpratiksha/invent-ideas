@@ -1,7 +1,6 @@
 .columns{
     margin: 20px;
     display: flex;
-    
 }
   
 .column-left {
@@ -60,5 +59,26 @@
     justify-content: flex-end;
     position: inherit;
 }
+
+@media (max-width: 767px){
+  .idea-header{
+    font-size:1rem;
+  }
+  .idea-description{
+      font-size:0.8rem;
+  }
+  .column-right{
+  }
+}
+  
+   @media (max-width:1300px){
+    .idea-header{
+        font-size:1rem;
+      }
+      .idea-description{
+          font-size:0.8rem;
+      }
+   }
+    
 
 

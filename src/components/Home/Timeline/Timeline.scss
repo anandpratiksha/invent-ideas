@@ -324,3 +324,16 @@ $brand-color: #aa25df;
   margin-bottom: -13%;
   text-decoration: underline;
 }
+
+@media (max-width: 660px){
+  .timelineTextHeading{
+    margin-top:-1rem;
+  }
+  .container-timeline{
+   top:-15rem;
+  }
+
+  .ps-timeline-sec .container-timeline ol:before{
+    opacity: 0;
+  } 
+}

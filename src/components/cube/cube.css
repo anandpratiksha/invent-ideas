@@ -7,6 +7,13 @@
   line-height: 150px;
   text-decoration: underline;
 }
+
+@media (max-width: 660px){
+  .text-center{
+    font-size: 1.4rem;
+    margin-top: -28rem;
+  }
+}
 #cube-container {
   width: 290px;
   height: 290px;

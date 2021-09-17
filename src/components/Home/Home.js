@@ -14,6 +14,7 @@ import ScrollUpButton from "react-scroll-up-button";
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { UPDATE_OWNER } from '../../redux/constants/owner'
+import { Fade, LightSpeed } from 'react-reveal'
 
 function Home() {
 
@@ -61,7 +62,9 @@ function Home() {
                 <div className="main">
                     <div className="title">
                         <div className="leftside">
-                            <p className="description">We connect Innovators with Investors to bring new products to market.</p>
+                            <Fade left>
+                                <p className="description">We connect Innovators with Investors to bring new products to market.</p>
+                            </Fade>
                             <div className="left">
                                 <Button variant="contained">
                                     <Link to={investor ? '/investor-page' : '/signin-investor'} className='globalLink'>

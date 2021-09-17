@@ -325,7 +325,7 @@ $brand-color: #aa25df;
   text-decoration: underline;
 }
 
-@media (max-width: 660px){
+@media (max-width: 770px){
   .timelineTextHeading{
     margin-top:-1rem;
   }
@@ -336,4 +336,7 @@ $brand-color: #aa25df;
   .ps-timeline-sec .container-timeline ol:before{
     opacity: 0;
   } 
+  .ps-timeline-sec .container-timeline ol:after{
+    opacity: 0;
+  }
 }

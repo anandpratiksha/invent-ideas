@@ -14,3 +14,20 @@
   /* font-size: 1.6rem; */
   box-shadow: 5px 5px 10px #868686, -5px -5px 10px #ffffff !important;
 }
+
+/*responsive*/
+@media (max-width: 767px) {
+  .navigation_button {
+    font-size: 1rem !important;
+    /* margin: 10 auto !important; */
+    transition: 0.7s !important;
+    /* margin-right: 30px !important; */
+    color: #fff !important;
+    font-weight: 600 !important;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}

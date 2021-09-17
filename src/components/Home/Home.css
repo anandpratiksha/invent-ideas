@@ -47,6 +47,17 @@
   box-shadow: 5px 5px 10px #868686, -5px -5px 10px #ffffff !important;
 }
 
+/*responsive*/
+@media (max-width: 767px) {
+  .MuiButton-contained {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 574px) {
+ 
+}
+
+
 img {
   height: 29rem;
 }
@@ -82,7 +93,7 @@ img {
   }
 } */
 
-@media (max-width: 660px){
+@media (max-width: 767px){
   .animated {
     height:11rem;
     /* margin-top: 4rem; */
@@ -93,6 +104,17 @@ img {
    .title{
      display:grid;
    }
+ }
+
+ @media (max-width:1300px){
+  .animated {
+    height:17rem;
+    /* margin-top: 4rem; */
+   }
+   .description{
+     font-size:2.8rem;
+   }
+
  }
 
 @-webkit-keyframes up-down {

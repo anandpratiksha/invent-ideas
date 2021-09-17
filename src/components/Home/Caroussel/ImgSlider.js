@@ -7,6 +7,7 @@ import p2 from '../../gifs/page2.gif';
 import p3 from '../../gifs/page3.gif';
 import p4 from '../../gifs/page4.gif';
 import '../Caroussel/Carousel.css'
+import { Zoom } from "react-reveal";
 
 export default class PauseOnHover extends Component {
   render() {
@@ -21,7 +22,9 @@ export default class PauseOnHover extends Component {
     };
     return (
       <div className="imgslider">
-        <p className="heading" align="center">Acomplishment</p>
+        <Zoom right cascade>
+          <p className="heading" align="center">Acomplishment</p>
+        </Zoom>
         <br />
         <Slider {...settings}>
           <div>

@@ -4,18 +4,17 @@ import step1 from '../../img/step1.png'
 import step2 from '../../img/step2.png'
 import step3 from '../../img/step3.png'
 import step4 from '../../img/step4.png'
-import { Slide } from 'react-reveal'
+import { Flip, Slide } from 'react-reveal'
 
 function Timeline() {
     return (
         <div className="timelineContainer">
-            <Slide bottom>
+            <Flip bottom cascade>
                 <h1 className="timelineTextHeading" >How it Works</h1>
-            </Slide>
+            </Flip>
             <div className="timeline">
                 <section className="ps-timeline-sec">
                     <div className="container-timeline">
-
                         <ol className="ps-timeline">
                             <Slide bottom>
                                 <li>

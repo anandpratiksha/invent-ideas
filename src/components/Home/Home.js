@@ -15,6 +15,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { UPDATE_OWNER } from '../../redux/constants/owner'
 import { Fade, LightSpeed } from 'react-reveal'
+import undraw1 from '../img/undraw1.png'
+import undraw2 from '../img/undraw2.png'
+import undraw3 from '../img/undraw3.png'
+import undraw4 from '../img/undraw4.png'
+import undraw5 from '../img/undraw5.png'
+import undraw6 from '../img/undraw6.png'
 
 function Home() {
 
@@ -87,6 +93,15 @@ function Home() {
                     </div>
                     <Timeline />
                     <Cube />
+                    <div className="undraw">
+                        <p className="undraw-name">Innovation In You </p>
+                        <img className="undrawImg" src={undraw1} alt="" />
+                        <img className="undrawImg" src={undraw2} alt="" />
+                        <img className="undrawImg" src={undraw3} alt="" />
+                        <img className="undrawImg" src={undraw4} alt="" />
+                        <img className="undrawImg" src={undraw5} alt="" />
+                        <img className="undrawImg" src={undraw6} alt="" />
+                    </div>
                     <ImgSlider />
                     <br /><br />
                 </div>

@@ -57,9 +57,9 @@ function Ideapage(props) {
                         <h2 className="name">Name:{ideaItem[0]?.name}</h2>
                         <h2 className="date">Date:{ideaItem[0]?.date}</h2>
                     </div>
-                    <h1 className="idea-title">{ideaItem[0]?.title}</h1>
+                    <h1 className="idea-title" align="center">{ideaItem[0]?.title}</h1>
                     <ImgSlider />
-                    <p>{ideaItem[0]?.description}</p>
+                    <p align="center">{ideaItem[0]?.description}</p>
                     <div className="contact">
                         <Button className='navigation_button' >
                             <Link to={`/contact-page/${ideaItem[0]?.id}`} className='globalLink'>

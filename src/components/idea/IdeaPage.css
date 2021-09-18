@@ -48,3 +48,40 @@
   /* font-size: 1.6rem; */
   box-shadow: 5px 5px 10px #868686, -5px -5px 10px #ffffff !important;
 }
+
+@media (max-width: 767px) {
+ .idea-contents{
+   display: grid;
+   justify-content:center;
+ }
+ .ideaImage{
+   height:4rem;
+   width:4rem;
+   justify-content:center;
+   display: flex;
+   margin: 0 auto !important;
+ }
+ .name,
+.date {
+  padding: 5px;
+  text-align: center;
+}
+}
+@media (max-width: 1004px) {
+  .idea-contents{
+    display: grid;
+    justify-content:center;
+  }
+  .ideaImage{
+    height:4rem;
+    width:4rem;
+    justify-content:center;
+    display: flex;
+    margin: 0 auto !important;
+  }
+  .name,
+ .date {
+   padding: 5px;
+   text-align: center;
+ }
+}

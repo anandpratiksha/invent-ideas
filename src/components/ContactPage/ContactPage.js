@@ -8,6 +8,7 @@ import ContactMailIcon from '@material-ui/icons/ContactMail';
 import CallIcon from '@material-ui/icons/Call';
 import EmailIcon from '@material-ui/icons/Email';
 import data from '../ideaShort/data.js';
+import Zoom from 'react-reveal/Zoom';
 
 function ContactPage(props) {
 
@@ -35,24 +36,26 @@ function ContactPage(props) {
                         </div>
                     </div>
                 </div>
-                <div className="contactInfo">
-                    <div className="contact-content">
-                        <EmojiObjectsIcon className="icons" /> <p>Idea : {ideaItem[0]?.title}</p>
-                    </div>
-                    <div className="contact-content">
-                        <DescriptionIcon className="icons" /> <p>Name : {ideaItem[0]?.name}</p>
-                    </div>
-                    <div className="contact-content">
-                        <EmailIcon className="icons" /> <p>Email : {ideaItem[0]?.email}</p>
-                    </div>
-                    <div className="contact-content">
-                        <CallIcon className="icons" />  <p>Phone Number : {ideaItem[0]?.mobileno}</p>
-                    </div>
-                    <div className="contact-content">
+                <Zoom top cascade>
+                    <div className="contactInfo">
+                        <div className="contact-content">
+                            <EmojiObjectsIcon className="icons" /> <p>Idea : {ideaItem[0]?.title}</p>
+                        </div>
+                        <div className="contact-content">
+                            <DescriptionIcon className="icons" /> <p>Name : {ideaItem[0]?.name}</p>
+                        </div>
+                        <div className="contact-content">
+                            <EmailIcon className="icons" /> <p>Email : {ideaItem[0]?.email}</p>
+                        </div>
+                        <div className="contact-content">
+                            <CallIcon className="icons" />  <p>Phone Number : {ideaItem[0]?.mobileno}</p>
+                        </div>
+                        <div className="contact-content">
 
-                        <ContactMailIcon className="icons" />  <p>Address : {ideaItem[0]?.address}</p>
+                            <ContactMailIcon className="icons" />  <p>Address : {ideaItem[0]?.address}</p>
+                        </div>
                     </div>
-                </div>
+                </Zoom>
             </div>
             <br />
             <Animation />

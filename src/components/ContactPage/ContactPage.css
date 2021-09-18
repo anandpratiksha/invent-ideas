@@ -9,13 +9,13 @@
 }
 
 .card {
-  width: 450px;
-  height: 550px;
+  width: 350px;
+  height: 500px;
   position: relative;
   transform-style: preserve-3d;
   transition: 1s;
   /* border: 5px solid red; */
-  left: -6%;
+  /* left: -6%; */
 }
 
 .card-img {
@@ -130,4 +130,13 @@
 .icons {
   color: rgb(93, 15, 236);
   margin-right: 1rem;
+}
+
+@media (max-width: 767px) {
+ .card{
+   display:none;
+ }
+}
+@media (max-width: 574px) {
+ 
 }

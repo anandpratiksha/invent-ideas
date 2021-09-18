@@ -18,12 +18,12 @@
 /*responsive*/
 @media (max-width: 767px) {
   .navigation_button {
-    font-size: 1rem !important;
-    /* margin: 10 auto !important; */
+    font-size: 10px !important;
     transition: 0.7s !important;
-    /* margin-right: 30px !important; */
     color: #fff !important;
     font-weight: 600 !important;
+    height:2rem !important;
+    width:2rem !important
   }
 }
 @media (max-width: 574px) {

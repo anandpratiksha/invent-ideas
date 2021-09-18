@@ -136,7 +136,50 @@ img {
 }
 
 .undraw{
-  
+  display: grid;
+  padding: 4rem;
+  grid-template-columns: repeat(3, 25%);
+  grid-column-gap: 30px;
+  background-color:pink;
+  background: rgba(226, 214, 255, 0.61);
+box-shadow: 0 8px 32px 0 rgba(3, 49, 255, 0.356);
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 1.5px );
+margin: -9px;
 }
 
+.undrawImg{
+  height:20rem;
+}
 
+.undraw-name{
+  font-size:3rem;
+  text-align:center;
+  /* font-weight:600; */
+}
+
+.u1{
+  margin-top:5rem;
+}
+
+.u2{
+  margin-left: 11rem;
+}
+
+.u3{
+  height:15rem;
+}
+
+.u4{
+  margin-left: 4rem;
+  margin-top: 5rem;
+}
+
+.u5{
+  margin-left: 6rem;
+}
+
+.u6{
+  margin-left: 50%;
+  margin-top:2rem;
+}

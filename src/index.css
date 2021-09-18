@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../src/components/img/header-hero.jpg);
+  background-image: url(../src/components/img/bg.jpg);
   background-repeat: no-repeat;
   /* background-size: 100% 100%; */
 }

@@ -137,7 +137,7 @@ img {
 
 .undraw{
   display: grid;
-  padding: 4rem;
+  padding: 3rem;
   grid-template-columns: repeat(3, 25%);
   grid-column-gap: 30px;
   background-color:pink;
@@ -146,6 +146,10 @@ box-shadow: 0 8px 32px 0 rgba(3, 49, 255, 0.356);
 backdrop-filter: blur( 1.5px );
 -webkit-backdrop-filter: blur( 1.5px );
 margin: -9px;
+background-image: url(../img/header-hero.jpg);
+background-repeat: no-repeat;
+background-size: 100% 90%;
+height:90%;
 }
 
 .undrawImg{
@@ -158,8 +162,13 @@ margin: -9px;
   /* font-weight:600; */
 }
 
+.undraw-name2{
+  font-size:3rem;
+  text-align:end;
+}
+
 .u1{
-  margin-top:5rem;
+  margin-top:8rem;
 }
 
 .u2{
@@ -168,11 +177,14 @@ margin: -9px;
 
 .u3{
   height:15rem;
+  margin-top: -2rem;
 }
 
 .u4{
   margin-left: 4rem;
   margin-top: 5rem;
+  width:27rem;
+  height:25rem;
 }
 
 .u5{
@@ -181,5 +193,5 @@ margin: -9px;
 
 .u6{
   margin-left: 50%;
-  margin-top:2rem;
+  /* margin-top:2rem; */
 }

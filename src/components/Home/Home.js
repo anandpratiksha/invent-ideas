@@ -14,7 +14,7 @@ import ScrollUpButton from "react-scroll-up-button";
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { UPDATE_OWNER } from '../../redux/constants/owner'
-import { Bounce, Fade, LightSpeed, Slide } from 'react-reveal'
+import { Bounce, Fade, Flip, LightSpeed, Slide } from 'react-reveal'
 import undraw1 from '../img/undraw1-removebg-preview.png'
 import undraw2 from '../img/undraw2-removebg-preview.png'
 import undraw3 from '../img/undraw3-removebg-preview.png'
@@ -94,9 +94,9 @@ function Home() {
                     <Timeline />
                     <Cube />
                     <div className="undraw">
-                        <Bounce bottom>
-                            <p className="undraw-name">The Age of Invention Is Innovation In You </p>
-                        </Bounce>
+                        <Flip bottom cascade>
+                            <p className="undraw-name">The Age of             Invention </p>
+                        </Flip>
                         <Slide bottom>
                             <img className="undrawImg u1" src={undraw2} alt="" />
                         </Slide>
@@ -115,6 +115,7 @@ function Home() {
                         <Slide left>
                             <img className="undrawImg u6" src={undraw6} alt="" />
                         </Slide>
+                        <p className="undraw-name2">Turn Ideas Into             Reality </p>
                     </div>
                     <ImgSlider />
                     <br /><br />

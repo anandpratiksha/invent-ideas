@@ -15,12 +15,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { UPDATE_OWNER } from '../../redux/constants/owner'
 import { Bounce, Fade, LightSpeed, Slide } from 'react-reveal'
-import undraw1 from '../img/undraw1.png'
-import undraw2 from '../img/undraw2.png'
-import undraw3 from '../img/undraw3.png'
-import undraw4 from '../img/undraw4.png'
-import undraw5 from '../img/undraw5.png'
-import undraw6 from '../img/undraw6.png'
+import undraw1 from '../img/undraw1-removebg-preview.png'
+import undraw2 from '../img/undraw2-removebg-preview.png'
+import undraw3 from '../img/undraw3-removebg-preview.png'
+import undraw4 from '../img/undraw4-removebg-preview.png'
+import undraw5 from '../img/undraw5-removebg-preview.png'
+import undraw6 from '../img/undraw6-removebg-preview.png'
 
 function Home() {
 
@@ -95,7 +95,7 @@ function Home() {
                     <Cube />
                     <div className="undraw">
                         <Bounce bottom>
-                            <p className="undraw-name">Innovation In You </p>
+                            <p className="undraw-name">The Age of Invention Is Innovation In You </p>
                         </Bounce>
                         <Slide bottom>
                             <img className="undrawImg u1" src={undraw2} alt="" />

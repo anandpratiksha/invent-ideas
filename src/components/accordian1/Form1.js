@@ -9,6 +9,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import ExpandMoreSharpIcon from '@material-ui/icons/ExpandMoreSharp';
 import Button from '@material-ui/core/Button';
+import { useDispatch } from 'react-redux';
+import { innovatorForm1 } from '../../redux/actions/innovatorFormActions';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -24,6 +26,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Form1() {
+
+    const dispatch = useDispatch();
 
     const classes = useStyles();
 
@@ -46,8 +50,9 @@ function Form1() {
             competitors,
             completedAny,
             possessionAny,
-        }
-        console.log(data)
+            userType: "innovator"
+        };
+        dispatch(innovatorForm1(data));
     }
 
     const handleToggle = (value) => () => {
@@ -105,7 +110,7 @@ function Form1() {
                     <p className="dropdownHeading"> Category <ExpandMoreSharpIcon className='categoryIcon' /></p>
                     <div className='dropdownCategory'>
                         <List className='dropdownList'>
-                            {["It", "Mechanical", "Aerospace", "Environment", "Others"].map((value) => {
+                            {["Manufacturing", "App", "Automotive", "Aerospace", "Defence", "Thermal", "3D printing", "Concept"].map((value) => {
                                 const labelId = `checkbox-list-label-${value}`;
 
                                 return (

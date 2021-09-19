@@ -11,7 +11,7 @@ function InvestorProfile(props) {
 
     const { name, pic, investedIdea, interestedIdea } = user[0]
     // console.log(investedIdea)
-    const [picture, setPicture] = useState(pic);
+    const [picture] = useState(pic);
     // console.log('user', user[0].name);
 
     return (

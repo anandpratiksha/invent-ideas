@@ -21,7 +21,6 @@ import { investorSignup } from '../../redux/actions/signupActions';
 import Loading from '../loading/Loading.js';
 import { useSnackbar } from 'notistack';
 import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -124,6 +123,10 @@ function SignupInvestor(props) {
             alert('Password and Re-password does not match');
             return;
         };
+        if (password.length < 8) {
+            alert('Password should atleast consists of 8 characters');
+            return;
+        }
         if (mobile.length !== 13) {
             alert('Mobile number should consists of 10 digits');
             return;
@@ -327,7 +330,6 @@ function SignupInvestor(props) {
                     </Link>
                 </p>
             </div>
-            {/* <Footer /> */}
         </div>
     );
 }

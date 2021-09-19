@@ -1,50 +1,79 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Nav from '../Navbar/Navbar';
-import Chip from '@material-ui/core/Chip';
-import { Avatar } from '@material-ui/core';
 import '../ideaShort/IdeaShort.css';
 import innovatorItems from '../ideaShort/data';
 import IdeaShort from '../ideaShort/IdeaShort';
 import Footer from '../Footer/Footer.js';
+// import { chipData } from '../chipComponent/chipData';
+import Chips from '../chipComponent/Chips';
+import Pagination from '../pagination/Pagination';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAllIdea } from '../../redux/actions/getAllIdeaActions';
 
+let nos = [];
 function InvestorsPage() {
+
+    const dispatch = useDispatch();
+
+    // const innovatorItems = useSelector((state) => state.getAllIdea.allIdea);
+    // console.log(innovatorItems, 'investor page getAllIdea')
+
+    const [posts] = useState(innovatorItems);
+    const [no, setNo] = useState(1);
+    const [page, setPage] = useState([]);
+
+    useEffect(() => {
+        dispatch(getAllIdea());
+        // eslint-disable-next-line
+    }, []);
+    // console.log(nos, 'nos')
+
+    useEffect(() => {
+        const noOfPages = posts?.length / 10;
+        // console.log(noOfPages, 'noOfPages')
+        if (noOfPages) {
+            renderNumber(noOfPages)
+        }
+    }, [posts])
+
+    const renderNumber = (noOfPages) => {
+        nos = []
+        for (let i = 0; i < Math.ceil(noOfPages); i++) {
+            nos.push(i + 1);
+        }
+        // console.log(nos, 'nos2')
+        setPage(nos)
+    };
+
+    const onPageChange = (no) => {
+        setNo(no);
+        window.scroll(0, 0);
+    };
+
+    const endIndex = no * 10;
+    const startIndex = endIndex - 10;
+    if (posts) {
+        var data = posts.slice(startIndex, endIndex);
+    }
+
     return (
         <div>
             <Nav />
             <div className="">
                 <div className="column-left">
-                    <Chip
-                        size="medium"
-                        label="software"
-                        clickable
-                        color="primary"
-                        avatar={<Avatar>s</Avatar>}
-                    /><br />
-                    <Chip
-                        size="medium"
-                        label="Mechanincal"
-                        clickable
-                        color="primary"
-                        avatar={<Avatar>M</Avatar>}
-                    /><br />
-                    <Chip
-                        size="medium"
-                        label="Deveops"
-                        clickable
-                        color="primary"
-                        avatar={<Avatar>D</Avatar>}
-                    /><br />
-                    <Chip
-                        size="medium"
-                        label="Others"
-                        clickable
-                        color="primary"
-                        avatar={<Avatar>O</Avatar>}
-                    />
-                    <br />
+                    {/* {
+                        chipData.map((item, idx) => {
+                            return (
+                                <div>
+                                    <Chips key={idx} item={item} />
+                                </div>
+                            )
+                        })} */}
+                    <Chips />
                 </div>
                 <div className="column-right">
-                    <IdeaShort innovatorItems={innovatorItems} />
+                    <IdeaShort innovatorItems={data} />
+                    <Pagination onPageChange={onPageChange} nos={page} />
                 </div>
             </div>
             <Footer />

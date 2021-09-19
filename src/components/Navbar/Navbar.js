@@ -69,7 +69,7 @@ const Navbar = () => {
                             </Button>
                         </NavItem>
                         <NavItem>
-                            <Button className='navigation_button'>
+                            <Button className='navigation_button' style={innovator ? ({ 'display': 'none' }) : ({ 'display': 'block' })} >
                                 {/* <Link to='signin-investor' className='globalLink'> */}
                                 <Link to={investor ? '/' : '/signin-investor'} onClick={() => handleLogout()} className='globalLink'>
                                     {investor ? 'LOGOUT' : 'Investor Login'}
@@ -77,7 +77,7 @@ const Navbar = () => {
                             </Button>
                         </NavItem>
                         <NavItem>
-                            <Button className='navigation_button' >
+                            <Button className='navigation_button' style={investor ? ({ 'display': 'none' }) : ({ 'display': 'block' })}>
                                 <Link to={innovator ? '/' : '/signin-innovator'} onClick={() => handleLogout()} className='globalLink'>
                                     {innovator ? 'LOGOUT' : 'Innovator Login'}
                                 </ Link>

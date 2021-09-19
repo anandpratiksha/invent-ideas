@@ -4,8 +4,13 @@ import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
 import Button from '@material-ui/core/Button';
+import { useDispatch } from 'react-redux';
+import { innovatorForm3 } from '../../redux/actions/innovatorFormActions';
 
 function Form3(props) {
+
+    const dispatch = useDispatch();
+
     const [state, setState] = React.useState({
         patent: false,
         pendingPatent: false,
@@ -26,7 +31,8 @@ function Form3(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(state)
+        console.log(state, 'form 3')
+        dispatch(innovatorForm3(state));
     };
 
     return (

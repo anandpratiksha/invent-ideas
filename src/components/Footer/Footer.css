@@ -22,7 +22,9 @@ ul {
   background-color: #24262b;
   padding: 20px;
   margin-top: 6.9%;
+  position: relative;
 }
+
 .footer-col {
   width: 25%;
   /* padding: 0 15px; */

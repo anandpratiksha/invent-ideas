@@ -19,6 +19,7 @@ function Ideapage(props) {
 
     useEffect(() => {
         setIdeaItem(idea)
+        // eslint-disable-next-line 
     }, [props.match.params.id])
 
     // console.log(ideaItem[0].id)
@@ -49,7 +50,6 @@ function Ideapage(props) {
                     <Button className='navigation_button' >Contact</Button>
                 </div>
             </div> */}
-
             <div className="idea" >
                 <Fade top>
                     <div className="idea-contents">
@@ -69,8 +69,6 @@ function Ideapage(props) {
                     </div>
                 </Fade>
             </div>
-
-
             <Animation />
         </div>
     )

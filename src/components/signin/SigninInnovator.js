@@ -15,8 +15,6 @@ import { innovatorSignin } from '../../redux/actions/signinActions';
 import Loading from '../loading/Loading';
 import { useSnackbar } from 'notistack';
 import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -77,6 +75,7 @@ function SigninInnovator(props) {
         } else if (userError) {
             handleSnackbar('Signin was unsuccessful, please try again', 'error')
         }
+        // eslint-disable-next-line
     }, [user, userError])
 
 
@@ -136,7 +135,7 @@ function SigninInnovator(props) {
                     </Link>
                 </p>
             </div>
-            {/* <Footer /> */}
+
         </div>
     );
 }

@@ -21,7 +21,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { innovatorSignup } from '../../redux/actions/signupActions';
 import Loading from '../loading/Loading.js';
 import { useSnackbar } from 'notistack';
-import Footer from '../Footer/Footer';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -127,6 +126,10 @@ function SignupInnovator(props) {
             alert('Password and Re-password does not match');
             return;
         };
+        if (password.length < 8) {
+            alert('Password should atleast consists of 8 characters');
+            return;
+        }
         if (mobile.length !== 13) {
             alert('Mobile number should consists of 10 digits');
             return;
@@ -338,9 +341,8 @@ function SignupInnovator(props) {
                     </>
 
                 </div>
-
             </div>
-            {/* <Footer /> */}
+
         </>
     );
 }

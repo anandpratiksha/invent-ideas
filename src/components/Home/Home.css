@@ -54,9 +54,7 @@
   }
 }
 @media (max-width: 574px) {
- 
 }
-
 
 img {
   height: 29rem;
@@ -93,29 +91,28 @@ img {
   }
 } */
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .animated {
-    height:10rem;
+    height: 10rem;
     /* margin-top: 4rem; */
-   }
-   .description{
-     font-size:1.8rem;
-   }
-   .title{
-     display:grid;
-   }
- }
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+  .title {
+    display: grid;
+  }
+}
 
- @media (max-width:1300px){
+@media (max-width: 1300px) {
   .animated {
-    height:15rem;
+    height: 15rem;
     /* margin-top: 4rem; */
-   }
-   .description{
-     font-size:2.8rem;
-   }
-
- }
+  }
+  .description {
+    font-size: 2.8rem;
+  }
+}
 
 @-webkit-keyframes up-down {
   0% {
@@ -135,63 +132,65 @@ img {
   }
 }
 
-.undraw{
+.undraw {
   display: grid;
   padding: 3rem;
   grid-template-columns: repeat(3, 25%);
   grid-column-gap: 30px;
-  background-color:pink;
+  background-color: pink;
   background: rgba(226, 214, 255, 0.61);
-box-shadow: 0 8px 32px 0 rgba(3, 49, 255, 0.356);
-backdrop-filter: blur( 1.5px );
--webkit-backdrop-filter: blur( 1.5px );
-margin: -9px;
-background-image: url(../img/header-hero.jpg);
-background-repeat: no-repeat;
-background-size: 100% 90%;
-height:90%;
+  box-shadow: 0 8px 32px 0 rgba(3, 49, 255, 0.356);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  margin: -9px;
+  background-image: url(../img/header-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 90%;
 }
 
-.undrawImg{
-  height:20rem;
+.undrawImg {
+  height: 20rem;
 }
 
-.undraw-name{
-  font-size:3rem;
-  text-align:center;
+.undraw-name {
+  font-size: 3rem;
+  text-align: center;
   /* font-weight:600; */
 }
 
-.undraw-name2{
-  font-size:3rem;
-  text-align:end;
+.u1 {
+  margin-top: 8rem;
 }
 
-.u1{
-  margin-top:8rem;
-}
-
-.u2{
+.u2 {
   margin-left: 11rem;
 }
 
-.u3{
-  height:15rem;
+.u3 {
+  height: 15rem;
   margin-top: -2rem;
 }
 
-.u4{
+.u4 {
   margin-left: 4rem;
   margin-top: 5rem;
-  width:27rem;
-  height:25rem;
+  width: 27rem;
+  height: 25rem;
 }
 
-.u5{
+.u5 {
   margin-left: 6rem;
 }
 
-.u6{
+.u6 {
   margin-left: 50%;
   /* margin-top:2rem; */
+}
+
+.undraw__name2 {
+  position: absolute;
+  margin-left: 70%;
+  margin-top: 60%;
+  font-size: 2.5rem;
 }

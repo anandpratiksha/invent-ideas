@@ -43,10 +43,11 @@ function Home() {
         if (userFromReducer.user) {
             dispatch({ type: UPDATE_OWNER, payload: userFromReducer.user.data })
         }
+        // eslint-disable-next-line
     }, [userFromReducer.user])
 
-    const [investor, setInvestor] = React.useState(userFromReducer.user?.data.investor);
-    const [innovator, setInnovator] = React.useState(userFromReducer.user?.data.innovator);
+    const [investor] = React.useState(userFromReducer.user?.data.investor);
+    const [innovator] = React.useState(userFromReducer.user?.data.innovator);
 
     return (
         <>
@@ -54,8 +55,9 @@ function Home() {
                 <Navbar />
                 <Status />
                 <div style={{ overflowY: "scroll" }}></div>
-                <ScrollUpButton ContainerClassName="MyOverRideClass"
-                    TransitionClassName="MyOverRideTransitionedClass"
+                <ScrollUpButton
+                    //  ContainerClassName="MyOverRideClass"
+                    //     TransitionClassName="MyOverRideTransitionedClass"
                     StopPosition={0}
                     ShowAtPosition={150}
                     EasingType='easeOutCubic'
@@ -115,7 +117,11 @@ function Home() {
                         <Slide left>
                             <img className="undrawImg u6" src={undraw6} alt="" />
                         </Slide>
-                        <p className="undraw-name2">Turn Ideas Into             Reality </p>
+                        <div className="undraw__name2">
+                            <p>
+                                Turn Ideas Into <br />Reality
+                            </p>
+                        </div>
                     </div>
                     <ImgSlider />
                     <br /><br />

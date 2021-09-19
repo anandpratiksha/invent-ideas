@@ -10,7 +10,7 @@ function InnovatorProfile(props) {
 
     const { name, pic, postedIdea } = user[0]
     // console.log(investedIdea)
-    const [picture, setPicture] = useState(pic);
+    const [picture] = useState(pic);
     // console.log('user', user[0].name);
 
     return (

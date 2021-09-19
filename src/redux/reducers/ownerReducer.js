@@ -7,7 +7,7 @@ const initialState = {
 export const removeReducer = (state = initialState, action) => {
     switch (action.type) {
         case UPDATE_OWNER:
-            console.log('reducer-', state, 'payload', action.payload)
+            // console.log('reducer-', state, 'payload', action.payload)
             return {
                 ...state,
                 user: action.payload,

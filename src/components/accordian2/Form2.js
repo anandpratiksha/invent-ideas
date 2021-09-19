@@ -11,6 +11,8 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import InputBase from "@material-ui/core/InputBase";
 import Button from '@material-ui/core/Button';
+import { useDispatch } from 'react-redux';
+import { innovatorForm2 } from '../../redux/actions/innovatorFormActions';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -68,6 +70,8 @@ function Form2() {
 
     const classes = useStyles();
 
+    const dispatch = useDispatch();
+
     const [images, setImages] = useState([]);
     // console.log(images)
     const handleImage = async (value) => {
@@ -84,7 +88,7 @@ function Form2() {
         })
             .then((res) => res.json())
             .then(async (data) => {
-                console.log('cloudinary', data.secure_url);
+                // console.log('cloudinary', data.secure_url);
                 const picture = {
                     img: data.secure_url
                 }
@@ -98,6 +102,7 @@ function Form2() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(images)
+        dispatch(innovatorForm2);
     };
 
 

@@ -19,7 +19,7 @@ function Timeline() {
                             <Slide bottom>
                                 <li>
                                     <div className="ps-top">
-                                        <p><h4>Step1</h4>Innovator submit their ideas to our platform.</p>
+                                        <h4 className="step">Step1</h4><p>Innovator submit their ideas to our platform.</p>
                                     </div>
                                     <div className="ps-bot">
                                         <h5>Post your ideas</h5>
@@ -28,7 +28,7 @@ function Timeline() {
                                 </li>
                                 <li>
                                     <div className="ps-bot">
-                                        <p><h4>step2</h4>Investors select any ideas they are interested in.</p>
+                                        <h4 className="step">step2</h4><p>Investors select any ideas they are interested in.</p>
                                     </div>
                                     <div className="ps-top">
                                         <h5>Collection of ideas</h5>
@@ -37,7 +37,7 @@ function Timeline() {
                                 </li>
                                 <li>
                                     <div className="ps-top">
-                                        <p><h4>Step3</h4>Being interested in an idea investor contacts innovator for furture process.</p>
+                                        <h4 className="step">Step3</h4><p>Being interested in an idea investor contacts innovator for furture process.</p>
                                     </div>
                                     <div className="ps-bot">
                                         <h5>Connecting investor and innovator</h5>
@@ -46,7 +46,7 @@ function Timeline() {
                                 </li>
                                 <li>
                                     <div className="ps-bot">
-                                        <p><h4>Step4</h4>Finally the product of investor and innovator is  now available in market.</p>
+                                        <h4 className="step">Step4</h4><p>Finally the product of investor and innovator is  now available in market.</p>
                                     </div>
                                     <div className="ps-top">
                                         <h5>Product in market</h5>

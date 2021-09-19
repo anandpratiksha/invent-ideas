@@ -12,6 +12,8 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { removeOwner } from '../../redux/actions/owner';
+import { ReactComponent as MenuIcon } from "../Navbar/menu.svg";
+import { ReactComponent as CloseMenu } from "../Navbar/x.svg";
 
 
 const Navbar = () => {
@@ -50,42 +52,53 @@ const Navbar = () => {
             alert('Login to continue')
         }
     }
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
 
     return (
         <>
             <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
                 <NavContainer>
                     <Link to='/'>
-                        <NavLogo >
+                        <NavLogo className="logo">
                             <img src={logo} alt="page_logo" />
                         </NavLogo>
                     </Link>
-                    <NavMenu>
+                    <NavMenu className={click ? "nav-options active" : "nav-options"}>
                         <NavItem>
-                            <Button className='navigation_button' >
+                            <Button className='navigation_button option' >
                                 <Link to={innovator ? '/innovator-profile' : investor ? '/investor-profile' : '/'} onClick={() => handleProfile()} className='globalLink'>
                                     Profile
-                                </ Link>
+                                </Link>
                             </Button>
                         </NavItem>
                         <NavItem>
-                            <Button className='navigation_button' style={innovator ? ({ 'display': 'none' }) : ({ 'display': 'block' })} >
+                            <Button className='navigation_button option' style={innovator ? ({ 'display': 'none' }) : ({ 'display': 'block' })} >
                                 {/* <Link to='signin-investor' className='globalLink'> */}
                                 <Link to={investor ? '/' : '/signin-investor'} onClick={() => handleLogout()} className='globalLink'>
                                     {investor ? 'LOGOUT' : 'Investor Login'}
-                                </ Link>
+                                </Link>
                             </Button>
                         </NavItem>
                         <NavItem>
-                            <Button className='navigation_button' style={investor ? ({ 'display': 'none' }) : ({ 'display': 'block' })}>
+                            <Button className='navigation_button option' style={investor ? ({ 'display': 'none' }) : ({ 'display': 'block' })}>
                                 <Link to={innovator ? '/' : '/signin-innovator'} onClick={() => handleLogout()} className='globalLink'>
                                     {innovator ? 'LOGOUT' : 'Innovator Login'}
-                                </ Link>
+                                </Link>
                             </Button>
                         </NavItem>
+
                         <NavItem>
                         </NavItem>
                     </NavMenu>
+                    <div className="mobile-menu" onClick={handleClick}>
+                        {click ? (
+                            <CloseMenu className="menu-icon" />
+                        ) : (
+                            <MenuIcon className="menu-icon" />
+                        )}
+                    </div>
                 </NavContainer>
             </Nav>
         </>

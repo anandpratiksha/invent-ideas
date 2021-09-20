@@ -3,11 +3,11 @@
   width: 30%;
   height: 500px;
   margin: 7% auto;
-  border: 3px solid rgb(112, 110, 110);
+  /* border: 3px solid rgb(112, 110, 110); */
   border-radius: 15px;
-  background-color: #f0eaf0;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0.12, 0.2),
-    1px 1px 5px rgba(0, 0, 0.24, 0.2);
+  background-color: transparent;
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0.12, 0.2),
+    1px 1px 5px rgba(0, 0, 0.24, 0.2); */
 }
 
 .loading__image {

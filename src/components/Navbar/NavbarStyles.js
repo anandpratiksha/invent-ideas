@@ -40,6 +40,7 @@ text-decoration: none;
 export const NavMenu = styled.div`
 display: flex;
 align-items: center;
+justify-content: flex-end;
 list-style: none;
 text-align: center;
 /* margin-right: -4px;

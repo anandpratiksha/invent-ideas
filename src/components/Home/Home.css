@@ -52,8 +52,10 @@
   .MuiButton-contained {
     font-size: 1rem !important;
   }
+
 }
 @media (max-width: 574px) {
+
 }
 
 img {
@@ -193,4 +195,30 @@ img {
   margin-left: 70%;
   margin-top: 60%;
   font-size: 2.5rem;
+}
+
+@media (max-width: 767px){
+  .undraw {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(1, 25%);
+    grid-column-gap: 20px;
+    margin: -9px;
+    height: 90%;
+  }
+  .undrawImg {
+    height: 12rem;
+  }
+  .undraw-name {
+    font-size: 1.1rem;
+    text-align: center;
+    /* font-weight:600; */
+  }
+  .undraw__name2 {
+    font-size: 1rem;
+  }
+  .u4 {
+    width: 17rem;
+    height: 15rem;
+  }
 }

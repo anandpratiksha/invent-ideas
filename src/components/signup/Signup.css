@@ -69,3 +69,13 @@
 .navbarForm {
   background-color: #000 !important;
 }
+
+
+@media (max-width: 767px){
+  .formTitle{
+    font-size: 1rem;
+  }
+  .profileAvatar{
+    height:2rem !important;
+  }
+}
